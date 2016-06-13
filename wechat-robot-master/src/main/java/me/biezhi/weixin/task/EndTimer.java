@@ -6,7 +6,6 @@
  ***************************************************************/
 package me.biezhi.weixin.task;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
@@ -51,7 +50,7 @@ public class EndTimer {
 				StringBuffer buffer2 = new StringBuffer();
 				buffer2.append("下注核对：\n");
 				buffer2.append("══════════\n");
-				buffer.append(JiSuanJiFen.getHuiZong());
+				buffer2.append(JiSuanJiFen.getHuiZong());
 				buffer2.append("══════════\n");
 				buffer2.append("如遇网络延迟！一切下注以核对账单为准！\n");
 				buffer2.append("账单余分低于下注金额，上核对账单的，视为无效下注，不会扣也不会加！\n");

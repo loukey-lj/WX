@@ -40,14 +40,44 @@ public class JiSuanJiFen {
 			
 		}
 		String [] orderArr = liaoTianNeiRong.split(";");
+		boolean needFirst = false;
+		if(liaoTianNeiRong.contains("查") || liaoTianNeiRong.contains("取") || liaoTianNeiRong.contains("回")){
+			needFirst = true;
+		}
+		if(needFirst){
+			if(orderArr.length!=1){
+				return "查/取/回 操作请单独输入";
+			}
+		}
 		for(String str : orderArr){
 			String[] meiYiZhu = str.split(":");
 			String type = meiYiZhu[0];
 			if("查".equals(type)){
 				return "您的余额："+allMoneny + "";
 			}
-			if(EndTimer.isEnd && StartTimer.isStart){
-				return "已封盘 "+ str +" 无效";
+			
+			if("回".equals(type)){
+				//获取回额
+				Integer amout = Integer.valueOf(meiYiZhu[1]);
+				//第一步获取历史下注金额
+				JinErHuiZong jine = MoneyMap.maptemp.get(userName);
+				int leij = 0;
+				if(jine != null){
+					leij = jine.getLeiJi();
+				}
+				if(amout <= 0){
+					return "回额不能小于0";
+				}
+				if(allMoneny - amout - leij < 0){
+					return "回款["+amout+"]失败：总金额["+allMoneny+"] - 已下注金额[" + leij + "] = 可回金额[" + (allMoneny-leij) +"]";
+				}else{
+					return "-1 "+amout;
+				}
+				//第一步先判断
+			}
+			if(EndTimer.isEnd || !StartTimer.isStart){
+				str = str.replace(":NDY", "");
+				return "已封盘:"+ str +" 无效";
 			}
 			
 			if("取".equals(type)){
@@ -60,14 +90,14 @@ public class JiSuanJiFen {
 			//判断聊天内容
 			if(Jiang.map.containsKey(type)){
 				try {
-					Integer amout = Integer.valueOf(meiYiZhu[1]);
-					
-					if(amout < 50){
-						return "下注金额不能小于50";
-					}
-					
+					Integer amout = 0;
 					//如果是已改字开头
 					if(type.startsWith("改")){
+						amout = Integer.valueOf(meiYiZhu[1]);
+						
+						if(amout < 50){
+							return "下注金额不能小于50";
+						}
 						String typeTem = type.replace("改", "");
 						//第一步判断金额是否满足
 						if(allMoneny < amout){
@@ -121,9 +151,64 @@ public class JiSuanJiFen {
 						Map <String,Integer> typeValue = new HashMap<String, Integer>();
 						typeValue.put(type, amout);
 						MoneyMap.yonghuMeizhujine.put(userName,typeValue);
+					}else if(type.startsWith("哈")){
+						String typeTem = type.replace("哈", "");
+						//第一步判断金额是否满足
+						if(allMoneny <= 0 ){
+							return "您的余额：[" + allMoneny + "]不足,"+str+".请联系财务";
+						}
+						amout = allMoneny;
+						//判断是否操作下注范围
+						if("小".equals(typeTem) || "大".equals(typeTem) || "单".equals(typeTem) || "双".equals(typeTem)){
+							if(amout > 10000){
+								return "[大 小 单 双]下注总和不能超过上线 10000";
+							}
+						}
+						
+						if("小单".equals(typeTem) || "大单".equals(typeTem) || "小双".equals(typeTem) || "大双".equals(typeTem)){
+							if(amout > 5000){
+								return "[小单 大单 小双 大双]下注总和不能超过上线 5000";
+							}
+						}
+						
+						if("顺".equals(typeTem)){
+							if(amout > 2000){
+								return "[顺子]下注总和不能超过上线 2000";
+							}
+						}
+						
+						if("豹".equals(typeTem)){
+							if(amout > 2000){
+								return "[豹子]下注总和不能超过上线 2000";
+							}
+						}
+						
+						if(typeTem.contains("特")){
+							if(amout > 2000){
+								return "[特]下注总和不能超过上线 2000";
+							}
+						}
+						
+						JinErHuiZong jine = new JinErHuiZong();
+						jine.setDeail(type + " " + amout);
+						jine.setLeiJi(amout);
+						jine.setTotal(allMoneny);
+						jine.setName(userName);
+						MoneyMap.maptemp.put(userName, jine);
+						
+						/*List<JiangXiang> list = new ArrayList<JiangXiang>();
+						JiangXiang j = new JiangXiang(type,amout);
+						list.add(j);
+						MoneyMap.xiazhuMap.put(userName,list);*/
+						
+						MoneyMap.yonghuMeizhujine.remove(userName);
+						Map <String,Integer> typeValue = new HashMap<String, Integer>();
+						typeValue.put(type, amout);
+						MoneyMap.yonghuMeizhujine.put(userName,typeValue);
 					}
 					//正常下注
 					else{
+						amout = Integer.valueOf(meiYiZhu[1]);
 						//第一步获取历史下注金额
 						JinErHuiZong jine = MoneyMap.maptemp.get(userName);
 						//如果没有下注情况
@@ -262,12 +347,15 @@ public class JiSuanJiFen {
 							}
 							
 							if(type.contains("特")){
-								Integer te = typeValue.get("特");
-								if(te == null){
-									te = 0;
+								for(int i = 4; i<= 17; i ++){
+									Integer te = typeValue.get("特"+i);
+									if(te == null){
+										te = 0;
+									}
+									amout = amout + te;
 								}
 								
-								if(amout + te > 2000){
+								if(amout > 2000){
 									return "[特]下注总和不能超过上线 2000";
 								}
 							}

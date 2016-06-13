@@ -58,6 +58,7 @@ public class App {
 	
 	public String wxQun = null;
 	
+	private String caiWuBeizhu = "000呃呃呃";
 	/*// 微信联系人列表，可聊天的联系人列表
 	private JSONArray MemberList, ContactList;*/
 	
@@ -471,15 +472,30 @@ public class App {
 		
 		body.put("BaseRequest", this.BaseRequest);
 		body.put("Msg", Msg);
+		while (true){
+			HttpRequest request = HttpRequest.post(url)
+					.header("Content-Type", "application/json;charset=utf-8")
+					.header("Cookie", this.cookie)
+					.send(body.toString());
+			try {
+				
+				LOGGER.info("[*] " + request);
+				request.body();
+				
+				break;
+			} catch (Exception e) {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				e.printStackTrace();
+			}finally{
+				request.disconnect();
+			}
+		}
 		
-		HttpRequest request = HttpRequest.post(url)
-				.header("Content-Type", "application/json;charset=utf-8")
-				.header("Cookie", this.cookie)
-				.send(body.toString());
-		
-		LOGGER.info("[*] " + request);
-		request.body();
-		request.disconnect();
 	}
 	
 	/**
@@ -495,36 +511,52 @@ public class App {
 		body.put("SyncKey", this.SyncKey);
 		body.put("rr", DateKit.getCurrentUnixTime());
 		
-		HttpRequest request = HttpRequest.post(url)
-				.header("Content-Type", "application/json;charset=utf-8")
-				.header("Cookie", this.cookie)
-				.send(body.toString());
 		
-		LOGGER.info("[*] " + request);
-		String res = request.body();
-		request.disconnect();
-		
-		if(StringKit.isBlank(res)){
-			return null;
-		}
-		
-		JSONObject jsonObject = JSON.parse(res).asObject();
-		JSONObject BaseResponse = jsonObject.getJSONObject("BaseResponse");
-		if(null != BaseResponse){
-			int ret = BaseResponse.getInt("Ret", -1);
-			if(ret == 0){
-				this.SyncKey = jsonObject.getJSONObject("SyncKey");
+		while (true){
+			HttpRequest request = HttpRequest.post(url)
+					.header("Content-Type", "application/json;charset=utf-8")
+					.header("Cookie", this.cookie)
+					.send(body.toString());
+			try {
 				
-				StringBuffer synckey = new StringBuffer();
-				JSONArray list = SyncKey.getJSONArray("List");
-				for(int i=0, len=list.size(); i<len; i++){
-					JSONObject item = list.getJSONObject(i);
-					synckey.append("|" + item.getInt("Key", 0) + "_" + item.getInt("Val", 0));
+				LOGGER.info("[*] " + request);
+				String res = request.body();
+				request.disconnect();
+				
+				if(StringKit.isBlank(res)){
+					return null;
 				}
-				this.synckey = synckey.substring(1);
+				
+				JSONObject jsonObject = JSON.parse(res).asObject();
+				JSONObject BaseResponse = jsonObject.getJSONObject("BaseResponse");
+				if(null != BaseResponse){
+					int ret = BaseResponse.getInt("Ret", -1);
+					if(ret == 0){
+						this.SyncKey = jsonObject.getJSONObject("SyncKey");
+						
+						StringBuffer synckey = new StringBuffer();
+						JSONArray list = SyncKey.getJSONArray("List");
+						for(int i=0, len=list.size(); i<len; i++){
+							JSONObject item = list.getJSONObject(i);
+							synckey.append("|" + item.getInt("Key", 0) + "_" + item.getInt("Val", 0));
+						}
+						this.synckey = synckey.substring(1);
+					}
+				}
+				return jsonObject;
+			} catch (Exception e) {
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				e.printStackTrace();
+			}finally{
+				request.disconnect();
 			}
 		}
-		return jsonObject;
+		
 	}
 	
 	/**
@@ -539,7 +571,6 @@ public class App {
 		
 		for(int i=0,len=AddMsgList.size(); i<len; i++){
 			
-			LOGGER.info("[*] 你有新的消息，请注意查收");
 			JSONObject msg = AddMsgList.getJSONObject(i);
 			String fromUserName = msg.getString("FromUserName");
 			int msgType = msg.getInt("MsgType", 0);
@@ -594,21 +625,31 @@ public class App {
 					if(content.contains(":<br/>")){
 						String mesg = makeMesg(content.split(":<br/>")[1]);
 						if(mesg == null || mesg.trim().equals("")){
+							if(content.contains("大") || content.contains("小") || content.contains("单") || content.contains("双") || content.contains("顺") || content.contains("豹") || content.contains("特") || content.contains("哈")){
+								content = "@"+tempName+" 投注格式有误，投注无效";
+								webwxsendmsg(content, msg.getString("FromUserName"));
+							}
 							return;
 						}
 						//积分计算判断积分是否有效
 						mesg = JiSuanJiFen.xiaZhuJianCha(mesg, name);
 						if(mesg != null){
-							content = "@"+tempName+" " + mesg;
-							
-							LOGGER.info("自动回复:"+name + ": " + content);
-							webwxsendmsg(content, msg.getString("FromUserName"));
+							//回款
+							if(mesg.startsWith("-1")){
+								String tempName1 = MoneyMap.beizhuUUid.get(caiWuBeizhu);
+								content = tempName +" 回款 " + mesg.replace("-1", "") + " 请核对";
+								webwxsendmsg(content, tempName1);
+							}else{
+								content = "@"+tempName+" " + mesg;
+								LOGGER.info("自动回复:"+name + ": " + content);
+								webwxsendmsg(content, msg.getString("FromUserName"));
+							}
 						}
 					}
 					//私聊
 					else{
 						//财务只有财务允许私聊
-						if(name.equals("000呃呃呃")){
+						if(name.equals(caiWuBeizhu)){
 							//加 备注 钱数
 							content = content.trim();
 							if(content.startsWith("加") || content.startsWith("减")){
@@ -630,7 +671,30 @@ public class App {
 //											MoneyMap.yonghuMeizhujine
 											res  = RedisUtil.addMoney(yonghu,num);
 										}else if(str[0].equals("减")){
-											res = RedisUtil.addMoney(yonghu,-num);
+											//减钱的话 那么先要判断已下注的金额
+											String allMonenyStr = RedisUtil.getValueBykey(yonghu);
+											Integer allMoneny = 0;
+											try{
+												allMoneny = Integer.valueOf(allMonenyStr);
+											}catch(Exception e){
+												
+											}
+											//第一步获取历史下注金额
+											JinErHuiZong jine = MoneyMap.maptemp.get(yonghu);
+											int leij = 0;
+											if(jine != null){
+												leij = jine.getLeiJi();
+											}
+											if(num <= 0){
+												res =  "回额不能小于0";
+											}else{
+												if(allMoneny - num - leij <= 0){
+													res =  "回款["+(-num)+"]失败：总金额["+allMoneny+"] - 已下注金额[" + leij + "] = 可回金额[" + (allMoneny-leij) +"]";
+												}else{
+													res = RedisUtil.addMoney(yonghu,-num);
+												}
+											}
+											num = -num;
 										}else{
 											return;
 										}
@@ -641,7 +705,11 @@ public class App {
 											webwxsendmsg(res1, msg.getString("FromUserName"));
 											
 											//修改钱数成功@用户
-											webwxsendmsg("@"+ MoneyMap.meberMap.get(uuid).getNickName() + " " + num + "到账当前余额:" +RedisUtil.getValueBykey(yonghu)  , wxQun);
+											if(num >0){
+												webwxsendmsg("@"+ MoneyMap.meberMap.get(uuid).getNickName() + " 充值" + num + "成功,当前积分:" +RedisUtil.getValueBykey(yonghu)  , wxQun);
+											}else{
+												webwxsendmsg("@"+ MoneyMap.meberMap.get(uuid).getNickName() + " 回款" + (-num) + "成功,当前积分:" +RedisUtil.getValueBykey(yonghu)  , wxQun);
+											}
 										}else{
 											//修改失败提示财务
 											webwxsendmsg(res, msg.getString("FromUserName"));
@@ -655,6 +723,7 @@ public class App {
 								String []str = content.split(",");
 								if(str == null || str.length != 4){
 									webwxsendmsg("输入兑奖结果有误", msg.getString("FromUserName"));
+									return;
 								}
 								try {
 									Integer num1 = Integer.valueOf(str[1]);
@@ -677,7 +746,7 @@ public class App {
 									String temp2  = StartTimer.qihao +" 期"+new SimpleDateFormat("HH:mm").format(new Date())+"：\n"
 											+ "0" + num1 + " 0" + num2 + " 0" + num3 + "=" + ((num1+ num2+ num3) > 9?(num1+ num2+ num3):"0"+(num1+ num2+ num3))
 											+ "(xzxz)";
-									webwxsendmsg(temp1, wxQun);
+									webwxsendmsg(temp2, wxQun);
 									
 									//打印兑奖结果
 									Jedis j = RedisPool.getJedis();
@@ -710,9 +779,9 @@ public class App {
 									
 									String str1  = "在线人数"+size+"--总分"+ total + "\n"
 											+ "◆◆◆NXMNMA◆◆◆\n"
-											+ "==================\n"
-											+ "账单只供参考，有错请私聊，安静娱乐少说话";
-									webwxsendmsg(str1 + buffer.toString(), wxQun);
+											+ "==================\n";
+									str1 = str1 + buffer.toString() + "==================\n" + "账单只供参考，有错请私聊，安静娱乐少说话";
+									webwxsendmsg(str1, wxQun);
 								} catch (Exception e) {
 									webwxsendmsg("输入兑奖结果有误", msg.getString("FromUserName"));
 								}
@@ -735,86 +804,192 @@ public class App {
 	}
 	
 
-	//根据聊天内容自动发送消息
+	/*//根据聊天内容自动发送消息
 	public String makeMesg(String string) {
-		string = string.replace(" ", "");
+		string = string.trim();
 		string = string.replace("加", "");
 		string = string.replace("子", "");
 		string = string.replace("消", "");
 		int i = string.length();
-	    List<Integer> list = new ArrayList<Integer>();
-	    List<Integer> list1 = new ArrayList<Integer>();
-	    List<String> list2 = new ArrayList<String>();
-	    List<String> list3 = new ArrayList<String>();
-	    Boolean isChinesStart =false;
- 		for(int j = 0; j < i; j++){
-			char ch = string.charAt(j);
-			if(Character.toString(ch).matches("[\u4e00-\u9fa5]+")){
-				if(j == 0){
-					isChinesStart = true;
-				}
-				list.add(j);
-			}else{
-				list1.add(j);
-			}
+		if(i == 0){
+			return null;
 		}
- 		
- 		int length = 1;
- 		for(int k = 0; k < list.size(); k ++ ){
- 			int index = list.get(k);
- 			if(k != list.size() -1){
- 				if(index+1 == list.get(k+1)){
- 					length ++;
- 				}else{
- 					list2.add(string.substring(index-length + 1,index + 1));
- 					length = 1;
- 				}
- 			}else{
- 				list2.add(string.substring(index-length + 1,index+ 1));
-				length = 1;
- 			}
- 		}
- 		
- 		int lengthStr = 1;
- 		for(int k = 0; k < list1.size(); k ++ ){
- 			int index = list1.get(k);
- 			if(k != list1.size() -1){
- 				if(index+1 == list1.get(k+1)){
- 					lengthStr ++;
- 				}else{
- 					list3.add(string.substring(index-lengthStr + 1,index + 1));
- 					lengthStr = 1;
- 				}
- 			}else{
- 				list3.add(string.substring(index-lengthStr + 1,index+ 1));
-				lengthStr = 1;
- 			}
- 		}
- 		
- 		StringBuffer buf = new StringBuffer();
- 		if(isChinesStart){
- 			for(int k = 0; k < list2.size(); k ++ ){
- 				String key = list2.get(k);
- 				if(Jiang.map.containsKey(key)){
- 					try {
- 						try {
- 							Integer amout = Integer.valueOf(list3.get(k));
- 							buf.append(key).append(":").append(amout).append(";");
-						} catch (Exception e) {
-							buf.append(key).append(":").append("NDY").append(";");
+		//第一步先将下注分开
+		String []everyOrder = string.split(" ");
+		
+		//定义最终返回的buffer
+		StringBuffer buffer = new StringBuffer();
+		if(everyOrder.length > 0){
+			for(String order : everyOrder){
+				order = order.replace(" ", "");
+				if("".equals(order)){
+					continue;
+				}
+				String type = "";
+				String money = "";
+				//第一步判断是否含有特
+				if(order.contains("特")){
+					//含有特的那么已特分开前面的为下注类型后面的为下注金额
+					String[] teArr = order.split("特");
+					//不合格的类型
+					if(teArr.length != 2){
+						return null;
+					}
+					type = teArr[0]+"特";
+					money = teArr[1];
+				}
+				//不含有特
+				else{
+					//解析出type与money
+					int length = order.length();
+					//第一个数字的位置
+					int numStart = -1;
+					for(int j = 0; j < length; j++){
+						if(!Character.toString(string.charAt(j)).matches("[\u4e00-\u9fa5]+")){
+							System.out.println(j + "order:"+ order + " " + Character.toString(string.charAt(j)));
+							numStart = j;
+							break;
 						}
+					}
+					//没有找到数字
+					if(numStart == -1){
+						type = order;
+					}else if(numStart > 0){
+						type = order.substring(0,numStart);
+						money = order.substring(numStart);
+					}
+				}
+				Integer typInt = Jiang.map.get(type);
+				//判断类型是否在Map内
+				if(typInt == null){
+					return null;
+				}
+				//是否后面要跟数字
+                if(typInt == 0){
+                	money = "NDY";
+                }else{
+                	try {
+                		Integer.valueOf(money);
 					} catch (Exception e) {
 						return null;
 					}
- 				}
- 			}
- 		}
- 		list.clear(); list=null;
- 		list1.clear();list1=null;
- 		list2.clear();list2 =null;
- 		list3.clear();list3 = null;
- 		return buf.toString();
-	}
+                }
+				buffer.append(type).append(":").append(money).append(";");
+			}
+			return buffer.toString();
+		}else{
+			return null;
+		}
+	}*/
+	
+	//根据聊天内容自动发送消息
+		public String makeMesg(String string) {
+			string = string.replace("加", "");
+			string = string.replace("子", "");
+			string = string.replace("消", "");
+			string = string.trim();
+			if(string.contains("特")){
+				for(int ii = 17;ii>=4; ii --){
+					String key = ii+"特";
+					//如果包含特
+					if(string.contains(key)){
+						//如果包含特 那就看他的前后是否包含空格
+						int index = string.indexOf(key) ;
+						System.out.println(index);
+						if(index > 1){
+							if(!" ".equals(string.substring(index -1, index))){
+								return null;
+							}
+						}
+						string = string.replace(key, Jiang.map1.get(key));
+					}
+				}
+			}
+		
+			string = string.replace(" ", "");
+			int i = string.length();
+		    List<Integer> list = new ArrayList<Integer>();
+		    List<Integer> list1 = new ArrayList<Integer>();
+		    List<String> list2 = new ArrayList<String>();
+		    List<String> list3 = new ArrayList<String>();
+		    Boolean isChinesStart =false;
+	 		for(int j = 0; j < i; j++){
+				char ch = string.charAt(j);
+				if(Character.toString(ch).matches("[\u4e00-\u9fa5]+")){
+					if(j == 0){
+						isChinesStart = true;
+					}
+					list.add(j);
+				}else{
+					list1.add(j);
+				}
+			}
+	 		
+	 		int length = 1;
+	 		for(int k = 0; k < list.size(); k ++ ){
+	 			int index = list.get(k);
+	 			if(k != list.size() -1){
+	 				if(index+1 == list.get(k+1)){
+	 					length ++;
+	 				}else{
+	 					list2.add(string.substring(index-length + 1,index + 1));
+	 					length = 1;
+	 				}
+	 			}else{
+	 				list2.add(string.substring(index-length + 1,index+ 1));
+					length = 1;
+	 			}
+	 		}
+	 		
+	 		int lengthStr = 1;
+	 		for(int k = 0; k < list1.size(); k ++ ){
+	 			int index = list1.get(k);
+	 			if(k != list1.size() -1){
+	 				if(index+1 == list1.get(k+1)){
+	 					lengthStr ++;
+	 				}else{
+	 					list3.add(string.substring(index-lengthStr + 1,index + 1));
+	 					lengthStr = 1;
+	 				}
+	 			}else{
+	 				list3.add(string.substring(index-lengthStr + 1,index+ 1));
+					lengthStr = 1;
+	 			}
+	 		}
+	 		
+	 		StringBuffer buf = new StringBuffer();
+	 		if(isChinesStart){
+	 			for(int k = 0; k < list2.size(); k ++ ){
+	 				String key = list2.get(k);
+	 				if(Jiang.map.containsKey(key)){
+	 					try {
+	 						try {
+	 							Integer amout = Integer.valueOf(list3.get(k));
+	 							buf.append(key).append(":").append(amout).append(";");
+							} catch (Exception e) {
+								buf.append(key).append(":").append("NDY").append(";");
+							}
+						} catch (Exception e) {
+							return null;
+						}
+	 				}
+	 			}
+	 		}
+	 		list.clear(); list=null;
+	 		list1.clear();list1=null;
+	 		list2.clear();list2 =null;
+	 		list3.clear();list3 = null;
+	 		
+	 		String res = buf.toString();
+	 		if(res.contains("特")){
+	 			for(int ii = 17;ii>=4; ii --){
+	 				String key = Jiang.map3.get(ii);
+	 				res = res.replace(key, Jiang.map2.get(key));
+	 			}
+	 		}
+	 		
+	 		return res;
+		}
 
 	private final String ITPK_API = "http://i.itpk.cn/api.php";
 	
@@ -851,42 +1026,47 @@ public class App {
 				LOGGER.info("[*] 进入消息监听模式 ...");
 				int playWeChat = 0;
 				while(true){
-					
-					int[] arr = syncCheck();
-					
-					LOGGER.info("[*] retcode=%s,selector=%s", arr[0], arr[1]);
-					
-					if(arr[0] == 1100){
-//						LOGGER.info("[*] 你在手机上登出了微信，债见");
-//						break;
-						arr = syncCheck();
-					}
-					
-					if(arr[0] == 0){
-						if(arr[1] == 2){
-							JSONObject data = webwxsync();
-							handleMsg(data);
-						} else if(arr[1] == 6){
-							JSONObject data = webwxsync();
-							handleMsg(data);
-						} else if(arr[1] == 7){
-							playWeChat += 1;
-							LOGGER.info("[*] 你在手机上玩微信被我发现了 %d 次", playWeChat);
-							webwxsync();
-						} else if(arr[1] == 3){
-						} else if(arr[1] == 0){
+					try {
+						
+						int[] arr = syncCheck();
+						
+						LOGGER.info("[*] retcode=%s,selector=%s", arr[0], arr[1]);
+						
+						if(arr[0] == 1100){
+	//						LOGGER.info("[*] 你在手机上登出了微信，债见");
+	//						break;
+							arr = syncCheck();
+						}
+						
+						if(arr[0] == 0){
+							if(arr[1] == 2){
+								JSONObject data = webwxsync();
+								handleMsg(data);
+							} else if(arr[1] == 6){
+								JSONObject data = webwxsync();
+								handleMsg(data);
+							} else if(arr[1] == 7){
+								playWeChat += 1;
+								LOGGER.info("[*] 你在手机上玩微信被我发现了 %d 次", playWeChat);
+								webwxsync();
+							} else if(arr[1] == 3){
+							} else if(arr[1] == 0){
+								try {
+									Thread.sleep(100);
+								} catch (InterruptedException e) {
+									e.printStackTrace();
+								}
+							}
+						} else {
 							try {
-								Thread.sleep(100);
+								Thread.sleep(1000);
 							} catch (InterruptedException e) {
 								e.printStackTrace();
 							}
 						}
-					} else {
-						try {
-							Thread.sleep(1000);
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-						}
+						
+					} catch (Exception e) {
+						// TODO: handle exception
 					}
 				}
 			}
