@@ -98,6 +98,9 @@ public class FenZhiChuLi {
 			int jifen=0;//用户所有下注获取的积分
 			for(String type:typeSet){
 				for (int i=0 ;i<kaijiang.size();i++) {
+					if(type.contains("改")){
+						type=type.split("改")[1];
+					}
 					if(type.equals(kaijiang.get(i))){//中奖则根据赔率计算得到积分
 						jifen+=map1.get(type)*fenzhiMap.get(type);
 						break;
@@ -123,7 +126,7 @@ public class FenZhiChuLi {
     }
     
     public static void main(String[] args) {
-    	Map<String,Map<String,Integer>> map=new HashMap<String, Map<String,Integer>>();
+    	/*Map<String,Map<String,Integer>> map=new HashMap<String, Map<String,Integer>>();
     	Map<String,Integer> map1=new  HashMap<String, Integer>();
     	map1.put("大", 100);
     	map1.put("小", 300);
@@ -143,7 +146,11 @@ public class FenZhiChuLi {
     	FenZhiChuLi fenzhi=new FenZhiChuLi();
     	FenZhiChuLi.kaijiang();
     	//单, 大, 大单, 顺, 15特
-    	new FenZhiChuLi().jieguo();
+    	new FenZhiChuLi().jieguo();*/
+    	
+    	
+    	String s="改大100";
+    	System.out.println(s.split("改")[1]);
     	
 	}
 }

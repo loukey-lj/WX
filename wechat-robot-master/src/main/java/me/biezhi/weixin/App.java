@@ -110,7 +110,7 @@ public class App {
 		
 		final File output = new File("temp.jpg");
 		
-		HttpRequest.post(url, true, 
+		HttpRequest request = HttpRequest.post(url, true, 
 				"t", "webwx", 
 				"_" , DateKit.getCurrentUnixTime())
 				.receive(output);
@@ -127,6 +127,7 @@ public class App {
 				}
 			});
 		}
+		request.disconnect();
 	}
 	
 	/**
@@ -744,8 +745,13 @@ public class App {
 									webwxsendmsg(temp1, wxQun);
 									
 									String temp2  = StartTimer.qihao +" 期"+new SimpleDateFormat("HH:mm").format(new Date())+"：\n"
-											+ "0" + num1 + " 0" + num2 + " 0" + num3 + "=" + ((num1+ num2+ num3) > 9?(num1+ num2+ num3):"0"+(num1+ num2+ num3))
-											+ "(xzxz)";
+											+ "0" + num1 + " 0" + num2 + " 0" + num3 + "=" + ((num1+ num2+ num3) > 9?(num1+ num2+ num3):"0"+(num1+ num2+ num3));
+									List<String> list1 = FenZhiChuLi.kaijiang;
+									String tem1 = "";
+									for(String str1 : list1){
+										tem1 =tem1 +str1 + " ";
+									}
+									temp2 = temp2 + "(" + temp1.trim() + ")";
 									webwxsendmsg(temp2, wxQun);
 									
 									//打印兑奖结果
