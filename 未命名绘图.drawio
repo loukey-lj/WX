@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-21T08:39:03.052Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="ggr6SjupCzHMIlEpeJSq" version="20.1.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-21T08:47:30.590Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="Dztm1oclGHNe61UnxiFe" version="20.1.1" type="github" pages="2">
   <diagram id="alpazB9rDXZP1vT-j2JS" name="CDC-HUDI">
-    <mxGraphModel dx="1398" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1638" dy="1909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -504,8 +504,8 @@
         <mxCell id="rjfQ9kvNoMq7JbhmC_GC-333" value="&lt;div&gt;背景： 为了做 ods 层的增量视图&lt;/div&gt;&lt;div&gt;1、所谓一天一个 版本 应该是 一天一个 savepoint&lt;br&gt;2、能否根据 savepoint 做增量&lt;br&gt;3、原生 start/end commit 区间查询逻辑梳理&lt;/div&gt;&lt;div&gt;4、对于没有变更的数据&amp;nbsp;_hoodie_commit_time 是否会变化&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;rounded=1;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" vertex="1" parent="1">
           <mxGeometry x="880" y="390" width="590" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="Xd3tCwa5FzFZhnE2AB4F-1" value="Spark&amp;nbsp; mr 查询适配 无 RO/RT 场景" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="388" y="-89" width="210" height="42" as="geometry" />
+        <mxCell id="Xd3tCwa5FzFZhnE2AB4F-1" value="HIVE 同步工具对接资产&lt;br&gt;Spark&amp;nbsp; mr 查询适配 无 RO/RT 场景" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="376.5" y="-94" width="210" height="42" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
