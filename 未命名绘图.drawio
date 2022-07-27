@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-27T08:52:45.282Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="PtvnhwtOYzC_5vDWbVwa" version="20.1.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-27T08:53:11.550Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="1aT5hD6uEabwpJoUGjvA" version="20.1.3" type="github" pages="2">
   <diagram id="alpazB9rDXZP1vT-j2JS" name="CDC-HUDI">
-    <mxGraphModel dx="1422" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -513,7 +513,7 @@
         <mxCell id="fn1M0nBAdgjgUEnhOP8Y-2" value="1、schema 变更同步方案&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.1、cdc ddl 时会给资产发 schema, 资产可以将 schema 转化成 hive 的 字段和类型，和hive 原有进行比对执行字段增删改&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.2、每次 hudi commit 时返回 hive 应有的字段和类型给资产, 资产经过比对进行字段增删改&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.3、每次 hudi commit 时调用资产接口返回hive 表结构，经过比对之后形成 alter 语句给资产&amp;nbsp;&lt;br&gt;&lt;br&gt;2、分区同步方案&lt;br&gt;&amp;nbsp; &amp;nbsp; 2.1、通过资产获取上一次同步的 commit 位置，增量获取分区形成 alter 给资产&lt;br&gt;&amp;nbsp; &amp;nbsp; 2.2、获取全部分区形成 alter 给资产&lt;br&gt;&amp;nbsp; &amp;nbsp; 2.3、每次 hudi commit 时给资产发送 分区修复命令。msck repair table xx&lt;br&gt;&lt;br&gt;3、注释信息同步&lt;br&gt;&amp;nbsp; &amp;nbsp; 3.1、注释信息不同步，因为在 ddl 时 已经给资产发送了最新注释&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;labelBorderColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="880" y="-526.62" width="530" height="319.25" as="geometry" />
         </mxCell>
-        <mxCell id="2Deze94Uv8R-9Xwazrr2-1" value="1、对于 COW 表不处理&lt;br&gt;2、SPARK&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2.1、对于 mor 表可以从 config 里面获取配置进行覆盖 tblproperties 属性，达到想要的效果&lt;br&gt;3、MR&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="2Deze94Uv8R-9Xwazrr2-1" value="1、对于 COW 表不处理, MOR 表默认走 RT 模式&lt;br&gt;2、SPARK&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2.1、对于 mor 表可以从 config 里面获取配置进行覆盖 tblproperties 属性，达到想要的效果&lt;br&gt;3、MR&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="10" y="690" width="350" height="90" as="geometry" />
         </mxCell>
       </root>
