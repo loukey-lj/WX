@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-28T04:38:12.161Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="zmKla0V-jfwvzxefklg7" version="20.1.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-07-28T07:30:46.897Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="Nw3KImvVD2Ro2T3227kp" version="20.2.1" type="github" pages="3">
   <diagram id="alpazB9rDXZP1vT-j2JS" name="CDC-HUDI">
-    <mxGraphModel dx="1422" dy="1867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1869" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,7 +31,7 @@
         <mxCell id="rjfQ9kvNoMq7JbhmC_GC-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.014;exitY=0.583;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.029;entryY=0.367;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="rjfQ9kvNoMq7JbhmC_GC-14" target="rjfQ9kvNoMq7JbhmC_GC-11" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="rjfQ9kvNoMq7JbhmC_GC-14" value="建表工具" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" parent="1" vertex="1">
+        <mxCell id="rjfQ9kvNoMq7JbhmC_GC-14" value="hudi建表工具" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" parent="1" vertex="1">
           <mxGeometry x="436.5" y="-760" width="70" height="60" as="geometry" />
         </mxCell>
         <mxCell id="rjfQ9kvNoMq7JbhmC_GC-236" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;startSize=1;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" parent="1" source="rjfQ9kvNoMq7JbhmC_GC-15" target="rjfQ9kvNoMq7JbhmC_GC-235" edge="1">
@@ -288,6 +288,11 @@
             <mxPoint x="-39" y="-15" as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-1" value="(DDL)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="rjfQ9kvNoMq7JbhmC_GC-255">
+          <mxGeometry x="-0.5059" relative="1" as="geometry">
+            <mxPoint x="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="rjfQ9kvNoMq7JbhmC_GC-257" value="" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=15;startSize=1;endSize=6;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="10" y="-120" as="sourcePoint" />
@@ -504,17 +509,14 @@
         <mxCell id="rjfQ9kvNoMq7JbhmC_GC-333" value="&lt;div&gt;背景： 为了做 ods 层的增量视图&lt;/div&gt;&lt;div&gt;1、所谓一天一个 版本 应该是 一天一个 savepoint&lt;br&gt;2、能否根据 savepoint 做增量&lt;br&gt;3、原生 start/end commit 区间查询逻辑梳理&lt;/div&gt;&lt;div&gt;4、对于没有变更的数据&amp;nbsp;_hoodie_commit_time 是否会变化&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;rounded=1;labelBackgroundColor=#FFFFFF;labelBorderColor=none;" parent="1" vertex="1">
           <mxGeometry x="880" y="390" width="590" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="Xd3tCwa5FzFZhnE2AB4F-1" value="HIVE 同步工具对接资产&lt;br&gt;Spark&amp;nbsp; mr 查询适配 无 RO/RT 场景" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="376.5" y="-94" width="210" height="42" as="geometry" />
-        </mxCell>
         <mxCell id="fn1M0nBAdgjgUEnhOP8Y-1" value="org.apache.hudi.sink.StreamWriteOperatorCoordinator&lt;br&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;start -&amp;gt; initHiveSync&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;()&lt;br&gt;&lt;/span&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;close -&amp;gt; hiveSyncExecutor&lt;span style=&quot;font-size: 9pt;&quot;&gt;.close&lt;/span&gt;&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;()&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;notifyCheckpointComplete -&amp;gt; syncHiveAsync&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;()&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;handleEndInputEvent -&amp;gt; syncHive&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;()&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;syncHiveAsync()-&amp;gt; hiveSyncExecutor：doSyncHive&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;syncHive-&amp;gt; doSyncHive&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;()&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;doSyncHive&lt;/span&gt;&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;() -&amp;gt; &lt;/span&gt;hiveSyncContext&lt;span style=&quot;font-size: 9pt;&quot;&gt;.hiveSyncTool&lt;/span&gt;&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;()&lt;/span&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;.syncHoodieTable&lt;/span&gt;&lt;span style=&quot;font-size: 9pt; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;()&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;labelBorderColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="1580" y="-527" width="478" height="300" as="geometry" />
         </mxCell>
         <mxCell id="fn1M0nBAdgjgUEnhOP8Y-2" value="1、schema 变更同步方案&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.1、cdc ddl 时会给资产发 schema, 资产可以将 schema 转化成 hive 的 字段和类型，和hive 原有进行比对执行字段增删改&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.2、每次 hudi commit 时返回 hive 应有的字段和类型给资产, 资产经过比对进行字段增删改&lt;br&gt;&amp;nbsp; &amp;nbsp; 1.3、每次 hudi commit 时调用资产接口返回hive 表结构，经过比对之后形成 alter 语句给资产&amp;nbsp;&lt;br&gt;&lt;br&gt;2、分区同步方案&lt;br&gt;&amp;nbsp; &amp;nbsp; 2.1、通过资产获取上一次同步的 commit 位置，增量获取分区形成 alter 给资产&lt;br&gt;&amp;nbsp; &amp;nbsp; 2.2、获取全部分区形成 alter 给资产&lt;br&gt;&amp;nbsp; &amp;nbsp; 2.3、每次 hudi commit 时给资产发送 分区修复命令。msck repair table xx&lt;br&gt;&lt;br&gt;3、注释信息同步&lt;br&gt;&amp;nbsp; &amp;nbsp; 3.1、注释信息不同步，因为在 ddl 时 已经给资产发送了最新注释&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=#FFFFFF;labelBorderColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="880" y="-526.62" width="530" height="319.25" as="geometry" />
         </mxCell>
-        <mxCell id="2Deze94Uv8R-9Xwazrr2-1" value="1、对于 COW 表不处理, MOR 表默认走 RT 模式&lt;br&gt;2、SPARK&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2.1、对于 mor 表可以从 config 里面获取配置进行覆盖 tblproperties 属性，达到想要的效果&lt;br&gt;3、MR&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="10" y="690" width="350" height="90" as="geometry" />
+        <mxCell id="2Deze94Uv8R-9Xwazrr2-1" value="1、对于 COW 表不处理, MOR 表默认走 RT 模式&lt;br&gt;2、SPARK&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 2.1、对于 mor 表可以从 config 里面获取配置进行覆盖 tblproperties 属性，达到想要的效果&lt;br&gt;3、MR 对&amp;nbsp;&lt;span style=&quot;text-align: center; background-color: rgb(255, 255, 255);&quot;&gt;HoodieParquetRealtimeInputFormat 进行判断都有设置读优化时则调用 父类方法&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="362" y="-87.5" width="350" height="90" as="geometry" />
         </mxCell>
         <mxCell id="W69QkMHenZ1MZKYH-RBN-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0.855;entryY=0.145;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="rjfQ9kvNoMq7JbhmC_GC-238" target="rjfQ9kvNoMq7JbhmC_GC-254" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -525,9 +527,141 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="W69QkMHenZ1MZKYH-RBN-3" value="首次启动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="W69QkMHenZ1MZKYH-RBN-2" vertex="1" connectable="0">
+        <mxCell id="W69QkMHenZ1MZKYH-RBN-3" value="每次启动&lt;br&gt;(restart)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="W69QkMHenZ1MZKYH-RBN-2" vertex="1" connectable="0">
           <mxGeometry x="0.0536" y="5" relative="1" as="geometry">
-            <mxPoint x="27" y="2" as="offset" />
+            <mxPoint x="47" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-59" target="QG1zP-c0AUY0eMqIIsFI-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-59" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-1080" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-61" target="QG1zP-c0AUY0eMqIIsFI-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-61" value="CDC 接入" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="917" y="-1080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-62" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=25;entryPerimeter=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-69" target="QG1zP-c0AUY0eMqIIsFI-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-63" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.019;entryY=0.29;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-69" target="QG1zP-c0AUY0eMqIIsFI-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1154.25" y="-980" as="sourcePoint" />
+            <mxPoint x="1384.75" y="-980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-64" value="KAFKA&amp;nbsp; topic 创建&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QG1zP-c0AUY0eMqIIsFI-63">
+          <mxGeometry x="-0.1584" relative="1" as="geometry">
+            <mxPoint x="51" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-65" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="QG1zP-c0AUY0eMqIIsFI-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1168" y="-1050" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-66" value="HUDI 表创建" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QG1zP-c0AUY0eMqIIsFI-65">
+          <mxGeometry x="0.0071" y="-2" relative="1" as="geometry">
+            <mxPoint x="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-67" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-69">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1398" y="-1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-68" value="注释,等级信息同步" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QG1zP-c0AUY0eMqIIsFI-67">
+          <mxGeometry x="0.1669" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-69" value="审批通过" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1097" y="-1080" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-70" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.014;exitY=0.583;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.029;entryY=0.367;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-71" target="QG1zP-c0AUY0eMqIIsFI-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-71" value="hudi建表工具" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" vertex="1" parent="1">
+          <mxGeometry x="1191" y="-1120" width="72" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-72" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-74" target="QG1zP-c0AUY0eMqIIsFI-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-73" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=30;entryPerimeter=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-74" target="QG1zP-c0AUY0eMqIIsFI-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-74" value="资产" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1397.5" y="-1110" width="80.5" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-75" value="HIVE" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1564" y="-1110" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-76" value="KAFKA" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1557.5" y="-980" width="50.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-77" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-78" target="QG1zP-c0AUY0eMqIIsFI-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-78" value="CDC 程序" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="855.5" y="-910" width="96" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-79" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-81" target="QG1zP-c0AUY0eMqIIsFI-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-80" value="发送 schema avro&lt;br&gt;带标识为启动时发送" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QG1zP-c0AUY0eMqIIsFI-79">
+          <mxGeometry x="-0.1499" y="-2" relative="1" as="geometry">
+            <mxPoint x="-13" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-81" value="start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1049.5" y="-1000" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-82" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.019;entryY=0.971;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-84" target="QG1zP-c0AUY0eMqIIsFI-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-83" value="消费数据" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QG1zP-c0AUY0eMqIIsFI-82">
+          <mxGeometry x="-0.1627" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-84" value="kafka" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.sequential_data;whiteSpace=wrap;rounded=1;labelBorderColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1276" y="-900" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-85" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-87" target="QG1zP-c0AUY0eMqIIsFI-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-86" value="发送 变更后 schema &lt;br&gt;包括mysql 注释&lt;br&gt;带标识为ddl时发送" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QG1zP-c0AUY0eMqIIsFI-85">
+          <mxGeometry x="-0.3939" y="-1" relative="1" as="geometry">
+            <mxPoint x="8" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-87" value="ddl" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1054" y="-890" width="51" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-88" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-81" target="QG1zP-c0AUY0eMqIIsFI-87">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1198" y="-770" as="sourcePoint" />
+            <mxPoint x="1248" y="-820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-89" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-91" target="QG1zP-c0AUY0eMqIIsFI-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-90" value="hive 表 schema 同步&lt;br&gt;hive 分区同步" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="QG1zP-c0AUY0eMqIIsFI-89">
+          <mxGeometry x="-0.0257" y="-3" relative="1" as="geometry">
+            <mxPoint x="-14" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-91" value="hudi与hive 同步" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1044.5" y="-790" width="65" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="QG1zP-c0AUY0eMqIIsFI-92" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QG1zP-c0AUY0eMqIIsFI-87" target="QG1zP-c0AUY0eMqIIsFI-91">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1208" y="-770" as="sourcePoint" />
+            <mxPoint x="1258" y="-820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
