@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-01T10:34:38.716Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="nFwDA_9vlglkVj8KjmOd" version="20.2.2" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-08-02T11:43:02.811Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="m_nm-AuF-mAN2cyOT2eV" version="20.2.2" type="github" pages="4">
   <diagram id="alpazB9rDXZP1vT-j2JS" name="CDC-HUDI">
-    <mxGraphModel dx="1662" dy="1875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -670,7 +670,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="N7DTVl0QF5ZTBbWYrLca" name="hive-ods-hudi-ods">
-    <mxGraphModel dx="1662" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1158,6 +1158,9 @@
         </mxCell>
         <mxCell id="o3F5QTeAZ5qrzgeEGrW9-113" value="hudi 化方式&lt;br&gt;&amp;nbsp; &amp;nbsp; 离线增量入湖&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;全量表： 初始化拉取一天的数据导入 hudi; jdbc拉取增量 merge 入 hudi&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 增量表： 将 hive 数据按批次从老到新依次 merge 初始化，之后 jdbc 拉取增量 merge 入 hudi&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; cdc 入湖：&amp;nbsp;将 hive 数据按批次从老到新依次 merge 初始化，之后 cdc 同步 mysql 存量+ binlog 入湖&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; flink drag：新建任务消费 kafka 入hudi,当需要替换时，创建视图，老的分区指向老的hive 表，新的分区指向 hudi 表&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBorderColor=default;" parent="1" vertex="1">
           <mxGeometry x="650" y="820" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nAeK4CY9AU4Aqp8G9Uj0-1" value="&lt;div&gt;&amp;nbsp; 实时 a 0-5K&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; a 4K-1W&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; a 6K-1.5W&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="70" width="270" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
