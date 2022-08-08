@@ -1,1 +1,81 @@
-<mxfile host="app.diagrams.net" modified="2022-08-07T14:30:46.221Z" agent="5.0 (iPad; CPU OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/103.0.5060.63 Mobile/15E148 Safari/604.1" version="20.2.3" etag="RHZbyMud1zDAxW8oLHnt" type="github"><diagram id="x59TCvXKuCyyMfjSHgs1">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-08-08T03:33:56.685Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="_Ixm5gCerV_WowIYuULL" version="20.2.3" type="github">
+  <diagram id="x59TCvXKuCyyMfjSHgs1" name="第 1 页">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZsVcWx6FHbU_dgJ4T7GV-1" target="ZsVcWx6FHbU_dgJ4T7GV-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-1" value="cdc" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-2" value="snapshot" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-3" value="snapshot" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-4" value="binlog" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZsVcWx6FHbU_dgJ4T7GV-5" target="ZsVcWx6FHbU_dgJ4T7GV-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-5" value="tagFunction" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-7" value="根据 DdTable 打标" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="294" y="130" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZsVcWx6FHbU_dgJ4T7GV-8" target="ZsVcWx6FHbU_dgJ4T7GV-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-17" value="keyby" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ZsVcWx6FHbU_dgJ4T7GV-16">
+          <mxGeometry x="0.25" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-8" value="mockFunction" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-10" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;notifyCheckpointComplete&lt;br&gt;按需 mock binlog 数据&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="630" y="70" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-11" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="130" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-12" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="324" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-13" value="N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="550" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZsVcWx6FHbU_dgJ4T7GV-15" target="ZsVcWx6FHbU_dgJ4T7GV-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-15" value="ddlSplitFunction" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-18" value="binlog 数据发到某一个并行度&lt;br&gt;snapshot 的数据随机发给下游" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="140" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-19" value="hudiSinkFunction" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-41" value="1、snapshot 数据直接下发&lt;br&gt;2、处理到 ddl 时需要把 ddl 后的数据存入 listState&lt;br&gt;3、在处理下一个 checkpoint 第一条数据时 就需要从 state 把数据进行重放&lt;br&gt;4、重放时如果有 ddl 则重放到 ddl 位置，再把当前的记录和之后的记录继续追加到 listState&lt;br&gt;5、mock 数据是特殊的binlog 数据，当 mock 数据是下一个 checkpoint 的第一条数据时，则需要把 state 数据进行重放，如果不是第一条数据则忽略" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="270" width="370" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-42" value="1、hudiRecord 携带 schema 以第一条数据的 schema 进行提交&lt;br&gt;2、需要将 ddl 变更传达到&amp;nbsp; coordinator coordinator comit 之后检测执行 ddl 变更&lt;br&gt;3、&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;StreamWriteFunction 需要将 ddl 同 writeStatus 一样存入 state, 保障故障恢复不丢数&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="460" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-43" value="M" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="630" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZsVcWx6FHbU_dgJ4T7GV-44" value="M" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="620" y="495" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
