@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-11T08:03:54.662Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="DssMPNaspR0ouGEpxPNE" version="20.2.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-08-11T09:54:40.046Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="wM93DSqSlvLF1cPZJ9sR" version="20.2.3" type="github" pages="3">
   <diagram id="x59TCvXKuCyyMfjSHgs1" name="第 1 页">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -114,7 +114,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="TjPZ8nspanylW2JHB2UB" name="离线同步方案">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2031" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -326,28 +326,64 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="GcMh__FRr09IANZ20q6G-128" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&lt;br&gt;id 2&lt;br&gt;id 3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="70" y="780" width="160" height="100" as="geometry" />
+          <mxGeometry x="50" y="1060" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="GcMh__FRr09IANZ20q6G-136" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=none;endFill=0;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="460" y="995" as="targetPoint" />
-            <mxPoint x="230" y="995" as="sourcePoint" />
+            <mxPoint x="440" y="1275" as="targetPoint" />
+            <mxPoint x="210" y="1275" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-141" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=classic;endFill=1;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-129" target="GcMh__FRr09IANZ20q6G-140">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="GcMh__FRr09IANZ20q6G-129" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N +1)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 2&lt;br&gt;id 4&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="70" y="970" width="160" height="100" as="geometry" />
+          <mxGeometry x="50" y="1250" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="GcMh__FRr09IANZ20q6G-137" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-130" target="GcMh__FRr09IANZ20q6G-135">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-130" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&lt;br&gt;id 2&lt;br&gt;id 3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="384" y="780" width="160" height="100" as="geometry" />
+        <mxCell id="GcMh__FRr09IANZ20q6G-130" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t1&lt;br&gt;id 2&amp;nbsp; t1&lt;br&gt;id 3&amp;nbsp; t1&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="364" y="1060" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-135" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&lt;br&gt;id 2&lt;br&gt;id 3&lt;br&gt;id 4&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="384" y="1030" width="160" height="100" as="geometry" />
+        <mxCell id="GcMh__FRr09IANZ20q6G-148" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=classic;endFill=1;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-135" target="GcMh__FRr09IANZ20q6G-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-135" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t1&lt;br&gt;id 2 t2&lt;br&gt;id 3 t1&lt;br&gt;id 4 t2&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="364" y="1310" width="160" height="100" as="geometry" />
         </mxCell>
         <mxCell id="GcMh__FRr09IANZ20q6G-138" value="MERGE" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
-          <mxGeometry x="434" y="980" width="60" height="30" as="geometry" />
+          <mxGeometry x="414" y="1260" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-140" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N +2)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&lt;br&gt;id 2&lt;br&gt;id 5&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1440" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-143" value="&lt;b&gt;inc_day=T-N &lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t1&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1100" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-145" value="&lt;b&gt;inc_day=T-N+1&lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t2&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1340" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-146" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t3&lt;br&gt;id 2 t3&lt;br&gt;id 3 t1&lt;br&gt;id 4 t2&lt;br&gt;id 5 t3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="361" y="1520" width="166" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-150" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=none;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="438" y="1484.5" as="targetPoint" />
+            <mxPoint x="208" y="1484.5" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-147" value="MERGE" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="414" y="1470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-151" value="&lt;b&gt;inc_day=T-N+2&lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t3&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1560" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-152" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、如果一个 spark 任务将多个任务合并成了一个 commit , 貌似就还原不了了&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、版本清理 t1 清理之后&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;inc_day=T-N 是否还有效&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1180" width="305" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GcMh__FRr09IANZ20q6G-153" value="&lt;b style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1300" width="170" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
