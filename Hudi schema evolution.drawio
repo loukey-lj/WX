@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-11T09:54:40.046Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="wM93DSqSlvLF1cPZJ9sR" version="20.2.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-08-12T07:10:31.623Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="Yk6ljHMD8aixZGDKDCFR" version="20.2.3" type="github" pages="3">
   <diagram id="x59TCvXKuCyyMfjSHgs1" name="第 1 页">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -114,275 +114,275 @@
     </mxGraphModel>
   </diagram>
   <diagram id="TjPZ8nspanylW2JHB2UB" name="离线同步方案">
-    <mxGraphModel dx="2031" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GcMh__FRr09IANZ20q6G-2" value="T-N" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-2" value="T-N" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="290" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-3" value="... ..." style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-3" value="... ..." style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="290" y="100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-4" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;T-1&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-4" value="&lt;span style=&quot;font-weight: 400;&quot;&gt;T-1&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="290" y="160" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="460" y="159.5" as="sourcePoint" />
             <mxPoint x="530" y="159.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-8" value="SPARK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-5">
+        <mxCell id="GcMh__FRr09IANZ20q6G-8" value="SPARK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GcMh__FRr09IANZ20q6G-5" vertex="1" connectable="0">
           <mxGeometry x="-0.3143" y="7" relative="1" as="geometry">
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-6" value="HUDI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-6" value="HUDI" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="130" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-9" value="HIVE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-9" value="HIVE" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" parent="1" vertex="1">
           <mxGeometry x="300" y="10" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-10" value="nysql" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-10" value="nysql" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
           <mxGeometry x="120" y="200" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-11" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-11" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="190" y="249" as="sourcePoint" />
             <mxPoint x="270" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-12" value="DATAX" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-11">
+        <mxCell id="GcMh__FRr09IANZ20q6G-12" value="DATAX" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GcMh__FRr09IANZ20q6G-11" vertex="1" connectable="0">
           <mxGeometry x="-0.3333" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-14" value="T" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-14" value="T" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="290" y="220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="420" y="260" as="sourcePoint" />
             <mxPoint x="530" y="170" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-16" value="SPARK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-15">
+        <mxCell id="GcMh__FRr09IANZ20q6G-16" value="SPARK" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GcMh__FRr09IANZ20q6G-15" vertex="1" connectable="0">
           <mxGeometry x="-0.2168" y="5" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-26" value="HUDI 配置&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;主键&lt;br&gt;source ordering&lt;br&gt;分区字段&lt;br&gt;分区格式 yyyyMMdd&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;hudi 表 dbName&lt;br&gt;hudi 表 tableName&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;索引方式&amp;nbsp; hfile&amp;nbsp;&amp;nbsp;&lt;br&gt;索引 ttl 时间&lt;br&gt;索引 bucket 个数&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;表类型 COW&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;hive HMS/JDBC 相关信息&lt;br&gt;basePath&lt;/blockquote&gt;&lt;br&gt;SPARK 配置&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;executor-memory&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;executor-cores&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;num-executors&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;queue&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;jars&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;取数sql配置&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;datax mysql -&amp;gt; hive 字段映射关系&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;mysql&amp;nbsp; jdbc 信息、db、table&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;字段补齐 cast (null as int) as age&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;字段强转/udf&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: bold; background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;unix_timestamp&lt;/span&gt;&lt;/blockquote&gt;" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-26" value="HUDI 配置&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;主键&lt;br&gt;source ordering&lt;br&gt;分区字段&lt;br&gt;分区格式 yyyyMMdd&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;hudi 表 dbName&lt;br&gt;hudi 表 tableName&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;索引方式&amp;nbsp; hfile&amp;nbsp;&amp;nbsp;&lt;br&gt;索引 ttl 时间&lt;br&gt;索引 bucket 个数&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;表类型 COW&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;hive HMS/JDBC 相关信息&lt;br&gt;basePath&lt;/blockquote&gt;&lt;br&gt;SPARK 配置&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;executor-memory&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;executor-cores&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;num-executors&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;queue&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;jars&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;取数sql配置&lt;br&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;datax mysql -&amp;gt; hive 字段映射关系&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;mysql&amp;nbsp; jdbc 信息、db、table&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;字段补齐 cast (null as int) as age&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;字段强转/udf&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: bold; background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;unix_timestamp&lt;/span&gt;&lt;/blockquote&gt;" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1120" y="320" width="340" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-40" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-40" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="50" y="410" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-42" value="" style="shape=internalStorage;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-42" value="" style="shape=internalStorage;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="220" y="400" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-43" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;" edge="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-43" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="440" as="sourcePoint" />
             <mxPoint x="210" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-54" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(248, 249, 250);&quot;&gt;ODS &lt;b&gt;离线&lt;/b&gt; HUDI 化&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-43">
+        <mxCell id="GcMh__FRr09IANZ20q6G-54" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(248, 249, 250);&quot;&gt;ODS &lt;b&gt;离线&lt;/b&gt; HUDI 化&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="GcMh__FRr09IANZ20q6G-43" vertex="1" connectable="0">
           <mxGeometry x="-0.32" relative="1" as="geometry">
             <mxPoint x="6" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-45" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;width=8;endSize=8.67;" edge="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-45" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;width=8;endSize=8.67;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="320" y="440" as="sourcePoint" />
             <mxPoint x="440" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-55" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;1、建表&lt;/b&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-45">
+        <mxCell id="GcMh__FRr09IANZ20q6G-55" value="&lt;span style=&quot;font-size: 12px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;b&gt;1、建表&lt;/b&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="GcMh__FRr09IANZ20q6G-45" vertex="1" connectable="0">
           <mxGeometry x="-0.2" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-50" target="GcMh__FRr09IANZ20q6G-63">
+        <mxCell id="GcMh__FRr09IANZ20q6G-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-50" target="GcMh__FRr09IANZ20q6G-63" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-50" value="1、mysql&amp;nbsp; schema -&amp;gt; hive schema&lt;br&gt;2、set&amp;nbsp;hudi properties" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;align=left;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-50" value="1、mysql&amp;nbsp; schema -&amp;gt; hive schema&lt;br&gt;2、set&amp;nbsp;hudi properties" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;align=left;" parent="1" vertex="1">
           <mxGeometry x="450" y="415" width="200" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-51" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;" edge="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-51" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#000000;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="320" y="460" as="sourcePoint" />
             <mxPoint x="430" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-60" value="&lt;b&gt;2、生成调度任务&lt;br&gt;同步 hive T-N ~ T-1&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-51">
+        <mxCell id="GcMh__FRr09IANZ20q6G-60" value="&lt;b&gt;2、生成调度任务&lt;br&gt;同步 hive T-N ~ T-1&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="GcMh__FRr09IANZ20q6G-51" vertex="1" connectable="0">
           <mxGeometry x="-0.451" y="2" relative="1" as="geometry">
             <mxPoint x="39" y="5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.33;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-61" target="GcMh__FRr09IANZ20q6G-50">
+        <mxCell id="GcMh__FRr09IANZ20q6G-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.33;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-61" target="GcMh__FRr09IANZ20q6G-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-61" value="mysql" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-61" value="mysql" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="480" y="330" width="70" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-63" value="HMS" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-63" value="HMS" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="580" y="330" width="60" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-65">
+        <mxCell id="GcMh__FRr09IANZ20q6G-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-65" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-65" value="统计分区信息，文件大小信息，进行任务&lt;br&gt;切分" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-65" value="统计分区信息，文件大小信息，进行任务&lt;br&gt;切分" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="440" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-89" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-80" target="GcMh__FRr09IANZ20q6G-88">
+        <mxCell id="GcMh__FRr09IANZ20q6G-89" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-80" target="GcMh__FRr09IANZ20q6G-88" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="710" y="520" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-99" value="next" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-89">
+        <mxCell id="GcMh__FRr09IANZ20q6G-99" value="next" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="GcMh__FRr09IANZ20q6G-89" vertex="1" connectable="0">
           <mxGeometry x="0.1429" y="-3" relative="1" as="geometry">
             <mxPoint x="-12" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-101" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;dashed=1;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-80">
+        <mxCell id="GcMh__FRr09IANZ20q6G-101" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;dashed=1;" parent="1" source="GcMh__FRr09IANZ20q6G-80" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="610" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-103" value="&lt;b&gt;3、split end&lt;br&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(248, 249, 250);&quot;&gt;同步 mysql 增量&lt;/span&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-101">
+        <mxCell id="GcMh__FRr09IANZ20q6G-103" value="&lt;b&gt;3、split end&lt;br&gt;&lt;span style=&quot;font-size: 12px; background-color: rgb(248, 249, 250);&quot;&gt;同步 mysql 增量&lt;/span&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="GcMh__FRr09IANZ20q6G-101" vertex="1" connectable="0">
           <mxGeometry x="0.1392" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-80" value="splits" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-80" value="splits" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="600" y="480" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-81" value="" style="triangle;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-81" value="" style="triangle;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="630" y="467" width="20" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-91" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-88" target="GcMh__FRr09IANZ20q6G-90">
+        <mxCell id="GcMh__FRr09IANZ20q6G-91" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-88" target="GcMh__FRr09IANZ20q6G-90" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-88" value="拿出一个 split 生成临时调度" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-88" value="拿出一个 split 生成临时调度" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="740" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-90" value="调度" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-90" value="调度" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="930" y="490" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-95" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-92" target="GcMh__FRr09IANZ20q6G-94">
+        <mxCell id="GcMh__FRr09IANZ20q6G-95" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-92" target="GcMh__FRr09IANZ20q6G-94" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-96" value="依赖" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-95">
+        <mxCell id="GcMh__FRr09IANZ20q6G-96" value="依赖" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="GcMh__FRr09IANZ20q6G-95" vertex="1" connectable="0">
           <mxGeometry x="-0.3333" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-106" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;dashed=1;dashPattern=1 1;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-92" target="GcMh__FRr09IANZ20q6G-26">
+        <mxCell id="GcMh__FRr09IANZ20q6G-106" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;dashed=1;dashPattern=1 1;" parent="1" source="GcMh__FRr09IANZ20q6G-92" target="GcMh__FRr09IANZ20q6G-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-92" value="SPLIT-N" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-92" value="SPLIT-N" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="965" y="540" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-97" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-94" target="GcMh__FRr09IANZ20q6G-80">
+        <mxCell id="GcMh__FRr09IANZ20q6G-97" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-94" target="GcMh__FRr09IANZ20q6G-80" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-98" value="上报成功 拿下一个 split" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-97">
+        <mxCell id="GcMh__FRr09IANZ20q6G-98" value="上报成功 拿下一个 split" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="GcMh__FRr09IANZ20q6G-97" vertex="1" connectable="0">
           <mxGeometry x="0.1073" y="3" relative="1" as="geometry">
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-94" value="report" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-94" value="report" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="965" y="640" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-105" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-102" target="GcMh__FRr09IANZ20q6G-104">
+        <mxCell id="GcMh__FRr09IANZ20q6G-105" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-102" target="GcMh__FRr09IANZ20q6G-104" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-102" value="生成 正式调度" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-102" value="生成 正式调度" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="550" y="710" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-108" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-104" target="GcMh__FRr09IANZ20q6G-107">
+        <mxCell id="GcMh__FRr09IANZ20q6G-108" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-104" target="GcMh__FRr09IANZ20q6G-107" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-104" value="每日增量调度" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-104" value="每日增量调度" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;strokeColor=default;" parent="1" vertex="1">
           <mxGeometry x="930" y="710" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-107" value="HUDI 配置&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;主键&lt;br&gt;source ordering&lt;br&gt;分区字段&lt;br&gt;分区格式 yyyyMMdd&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;hudi 表 dbName&lt;br&gt;hudi 表 tableName&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;索引方式&amp;nbsp; hfile&amp;nbsp;&amp;nbsp;&lt;br&gt;索引 ttl 时间&lt;br&gt;索引 bucket 个数&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;表类型 COW&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;hive HMS/JDBC 相关信息&lt;br&gt;basePath&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;/blockquote&gt;&lt;br&gt;SPARK 配置&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;executor-memory&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;executor-cores&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;num-executors&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;queue&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;jars&lt;/span&gt;&lt;br&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;取数sql配置&lt;br&gt;&lt;span style=&quot;&quot;&gt;	&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;mysql&amp;nbsp; jdbc 信息、db、table&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;字段强转/udf&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;b&gt;unix_timestamp&lt;/b&gt;&lt;br&gt;mysql 增量查询字段&lt;/span&gt;&lt;/blockquote&gt;" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-107" value="HUDI 配置&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;主键&lt;br&gt;source ordering&lt;br&gt;分区字段&lt;br&gt;分区格式 yyyyMMdd&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;hudi 表 dbName&lt;br&gt;hudi 表 tableName&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;索引方式&amp;nbsp; hfile&amp;nbsp;&amp;nbsp;&lt;br&gt;索引 ttl 时间&lt;br&gt;索引 bucket 个数&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;表类型 COW&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;hive HMS/JDBC 相关信息&lt;br&gt;basePath&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;/blockquote&gt;&lt;br&gt;SPARK 配置&lt;br&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;executor-memory&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;executor-cores&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;num-executors&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;queue&lt;/span&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Courier New&amp;quot;; background-color: rgb(255, 255, 255);&quot;&gt;jars&lt;/span&gt;&lt;br&gt;&lt;/blockquote&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/blockquote&gt;&lt;font face=&quot;Courier New&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;取数sql配置&lt;br&gt;&lt;span style=&quot;&quot;&gt; &lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;mysql&amp;nbsp; jdbc 信息、db、table&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;字段强转/udf&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;b&gt;unix_timestamp&lt;/b&gt;&lt;br&gt;mysql 增量查询字段&lt;/span&gt;&lt;/blockquote&gt;" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1120" y="750" width="340" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-131" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-128" target="GcMh__FRr09IANZ20q6G-130">
+        <mxCell id="GcMh__FRr09IANZ20q6G-131" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-128" target="GcMh__FRr09IANZ20q6G-130" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-133" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-128" target="GcMh__FRr09IANZ20q6G-129">
+        <mxCell id="GcMh__FRr09IANZ20q6G-133" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-128" target="GcMh__FRr09IANZ20q6G-129" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-134" value="id 1 没变更&lt;br&gt;id 2 有变更&lt;br&gt;id 3 删除了&lt;br&gt;id 4 新增了" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" vertex="1" connectable="0" parent="GcMh__FRr09IANZ20q6G-133">
+        <mxCell id="GcMh__FRr09IANZ20q6G-134" value="id 1 没变更&lt;br&gt;id 2 有变更&lt;br&gt;id 3 删除了&lt;br&gt;id 4 新增了" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;" parent="GcMh__FRr09IANZ20q6G-133" vertex="1" connectable="0">
           <mxGeometry x="-0.3913" y="-2" relative="1" as="geometry">
             <mxPoint x="-33" y="9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-128" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&lt;br&gt;id 2&lt;br&gt;id 3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-128" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&lt;br&gt;id 2&lt;br&gt;id 3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="50" y="1060" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-136" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=none;endFill=0;" edge="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-136" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=none;endFill=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="440" y="1275" as="targetPoint" />
             <mxPoint x="210" y="1275" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-141" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=classic;endFill=1;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-129" target="GcMh__FRr09IANZ20q6G-140">
+        <mxCell id="GcMh__FRr09IANZ20q6G-141" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=classic;endFill=1;" parent="1" source="GcMh__FRr09IANZ20q6G-129" target="GcMh__FRr09IANZ20q6G-140" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-129" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N +1)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 2&lt;br&gt;id 4&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-129" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N +1)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 2&lt;br&gt;id 4&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="50" y="1250" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-137" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-130" target="GcMh__FRr09IANZ20q6G-135">
+        <mxCell id="GcMh__FRr09IANZ20q6G-137" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;" parent="1" source="GcMh__FRr09IANZ20q6G-130" target="GcMh__FRr09IANZ20q6G-135" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-130" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t1&lt;br&gt;id 2&amp;nbsp; t1&lt;br&gt;id 3&amp;nbsp; t1&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-130" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t1&lt;br&gt;id 2&amp;nbsp; t1&lt;br&gt;id 3&amp;nbsp; t1&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="364" y="1060" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-148" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=classic;endFill=1;" edge="1" parent="1" source="GcMh__FRr09IANZ20q6G-135" target="GcMh__FRr09IANZ20q6G-146">
+        <mxCell id="GcMh__FRr09IANZ20q6G-148" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=classic;endFill=1;" parent="1" source="GcMh__FRr09IANZ20q6G-135" target="GcMh__FRr09IANZ20q6G-146" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-135" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t1&lt;br&gt;id 2 t2&lt;br&gt;id 3 t1&lt;br&gt;id 4 t2&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-135" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t1&lt;br&gt;id 2 t2&lt;br&gt;id 3 t1&lt;br&gt;id 4 t2&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="364" y="1310" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-138" value="MERGE" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-138" value="MERGE" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="414" y="1260" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-140" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N +2)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&lt;br&gt;id 2&lt;br&gt;id 5&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-140" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;&lt;b&gt;hive (T-N +2)&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&lt;br&gt;id 2&lt;br&gt;id 5&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="50" y="1440" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-143" value="&lt;b&gt;inc_day=T-N &lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t1&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-143" value="&lt;b&gt;inc_day=T-N &lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t1&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="550" y="1100" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-145" value="&lt;b&gt;inc_day=T-N+1&lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t2&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-145" value="&lt;b&gt;inc_day=T-N+1&lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t2&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="550" y="1340" width="250" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-146" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t3&lt;br&gt;id 2 t3&lt;br&gt;id 3 t1&lt;br&gt;id 4 t2&lt;br&gt;id 5 t3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-146" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; height=&quot;100%&quot; cellpadding=&quot;4&quot; style=&quot;width:100%;height:100%;border-collapse:collapse;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th align=&quot;center&quot;&gt;hudi&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;id 1&amp;nbsp; t3&lt;br&gt;id 2 t3&lt;br&gt;id 3 t1&lt;br&gt;id 4 t2&lt;br&gt;id 5 t3&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="361" y="1520" width="166" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-150" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=none;endFill=0;" edge="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-150" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;dashed=1;dashPattern=1 1;fontColor=#000000;endArrow=none;endFill=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="438" y="1484.5" as="targetPoint" />
             <mxPoint x="208" y="1484.5" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-147" value="MERGE" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-147" value="MERGE" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="414" y="1470" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-151" value="&lt;b&gt;inc_day=T-N+2&lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t3&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-151" value="&lt;b&gt;inc_day=T-N+2&lt;br&gt;&lt;/b&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;select * from&amp;nbsp; hudi where commit = t3&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="550" y="1560" width="250" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-152" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、如果一个 spark 任务将多个任务合并成了一个 commit , 貌似就还原不了了&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、版本清理 t1 清理之后&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;inc_day=T-N 是否还有效&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-152" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、如果一个 spark 任务将多个任务合并成了一个 commit , 貌似就还原不了了&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、版本清理 t1 清理之后&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;inc_day=T-N 是否还有效&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="850" y="1180" width="305" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GcMh__FRr09IANZ20q6G-153" value="&lt;b style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="GcMh__FRr09IANZ20q6G-153" value="&lt;b style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="870" y="1300" width="170" height="40" as="geometry" />
         </mxCell>
       </root>
