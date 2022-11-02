@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-02T03:22:13.866Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="Br50ih3NWsX6FGyiHT7a" version="20.5.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-02T03:31:51.143Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="xGk8KF1sGdVkGF6ebpGC" version="20.5.1" type="github" pages="2">
   <diagram id="IaXd8rD6_zRk8KyiqjDc" name="调用链路">
     <mxGraphModel dx="1385" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -221,12 +221,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="EV_8b6ImYduQrRioEZX_" name="hudi 架构">
-    <mxGraphModel dx="1422" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="583" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="4eF3XWVk3jrU0bxTCX5B-5" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="850" y="420" width="963" height="749" as="geometry" />
+          <mxGeometry x="870" y="449.5" width="973" height="749" as="geometry" />
         </mxCell>
         <mxCell id="wckTaN3UXEPwmcinamqq-2" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=default;" vertex="1" parent="1">
           <mxGeometry x="10" y="426" width="810" height="784" as="geometry" />
@@ -555,22 +555,24 @@
         <mxCell id="8dqf3LmB2ZCbOffcdoqO-1" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;writeTableMetadata&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;HoodieTable, instantTime, actionType, &lt;font color=&quot;#ff8000&quot;&gt;HoodieCommitMetadata &lt;/font&gt;metadata&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1140" y="690.5" width="630" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="8dqf3LmB2ZCbOffcdoqO-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="8dqf3LmB2ZCbOffcdoqO-6">
+        <mxCell id="8dqf3LmB2ZCbOffcdoqO-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8dqf3LmB2ZCbOffcdoqO-3" target="8dqf3LmB2ZCbOffcdoqO-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1120" y="755.5" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="8dqf3LmB2ZCbOffcdoqO-3" value="HoodieBackedTableMetadataWriter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="900" y="741.5" width="220" height="30" as="geometry" />
+          <mxGeometry x="900" y="752" width="220" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8dqf3LmB2ZCbOffcdoqO-4" value="HoodieBackedTableMetadataWriter" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="2005" y="1412" width="220" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="4eF3XWVk3jrU0bxTCX5B-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8dqf3LmB2ZCbOffcdoqO-6" target="4eF3XWVk3jrU0bxTCX5B-2">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="4eF3XWVk3jrU0bxTCX5B-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.539;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8dqf3LmB2ZCbOffcdoqO-6" target="4eF3XWVk3jrU0bxTCX5B-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1340" y="755.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="8dqf3LmB2ZCbOffcdoqO-6" value="update" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1185" y="740.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="1190" y="752" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="8dqf3LmB2ZCbOffcdoqO-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8dqf3LmB2ZCbOffcdoqO-8" target="8dqf3LmB2ZCbOffcdoqO-10">
           <mxGeometry relative="1" as="geometry" />
@@ -582,13 +584,13 @@
           <mxGeometry x="1530" y="620.5" width="100" height="54" as="geometry" />
         </mxCell>
         <mxCell id="CQXyWc43Opuu3ooODFHp-1" value="RDD&amp;lt;WriteStatus&amp;gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="870" y="477" width="130" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="4eF3XWVk3jrU0bxTCX5B-2" value="&lt;span style=&quot;&quot;&gt;按照 mor 的逻辑更新元表&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="740.5" width="160" height="30" as="geometry" />
+          <mxGeometry x="890" y="502" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4eF3XWVk3jrU0bxTCX5B-6" value="&lt;b&gt;数据Commit环节&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="423" width="105" height="24" as="geometry" />
+          <mxGeometry x="1120" y="453" width="105" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="4eF3XWVk3jrU0bxTCX5B-11" value="&lt;pre style=&quot;background-color:#ffffff;color:#000000;font-family:&#39;Courier New&#39;;font-size:9.0pt;&quot;&gt;1、convertMetadataToRecords &lt;br&gt;根据 HoodieCommitMetadata 构建出元表带更新数据集&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#000000;font-family:&#39;Courier New&#39;;font-size:9.0pt;&quot;&gt;2、按照 mor 的逻辑更新元表&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF8000;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="718.5" width="330" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
