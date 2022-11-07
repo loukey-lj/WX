@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-02T12:47:03.639Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="cN4ec9ufBa9Bbcl-tsX_" version="20.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-11-07T14:51:12.161Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="8hQw0xKKQkLlOqhzviBK" version="20.5.1" type="github" pages="4">
   <diagram id="IaXd8rD6_zRk8KyiqjDc" name="调用链路">
     <mxGraphModel dx="1422" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -221,7 +221,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="EV_8b6ImYduQrRioEZX_" name="hudi 架构">
-    <mxGraphModel dx="1422" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1662" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -592,41 +592,41 @@
         <mxCell id="4eF3XWVk3jrU0bxTCX5B-11" value="&lt;pre style=&quot;background-color:#ffffff;color:#000000;font-family:&#39;Courier New&#39;;font-size:9.0pt;&quot;&gt;1、convertMetadataToRecords &lt;br&gt;根据 HoodieCommitMetadata 构建出元表带更新数据集&lt;/pre&gt;&lt;pre style=&quot;background-color:#ffffff;color:#000000;font-family:&#39;Courier New&#39;;font-size:9.0pt;&quot;&gt;2、按照 mor 的逻辑更新元表&lt;/pre&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF8000;" parent="1" vertex="1">
           <mxGeometry x="1342" y="790" width="330" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="4ouGu83bFTgUQr9YGRA2-1" target="4ouGu83bFTgUQr9YGRA2-3">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="4ouGu83bFTgUQr9YGRA2-1" target="4ouGu83bFTgUQr9YGRA2-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="4ouGu83bFTgUQr9YGRA2-1" target="4ouGu83bFTgUQr9YGRA2-5">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="4ouGu83bFTgUQr9YGRA2-1" target="4ouGu83bFTgUQr9YGRA2-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="4ouGu83bFTgUQr9YGRA2-1" target="4ouGu83bFTgUQr9YGRA2-7">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="4ouGu83bFTgUQr9YGRA2-1" target="4ouGu83bFTgUQr9YGRA2-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="4ouGu83bFTgUQr9YGRA2-1" target="4ouGu83bFTgUQr9YGRA2-9">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" parent="1" source="4ouGu83bFTgUQr9YGRA2-1" target="4ouGu83bFTgUQr9YGRA2-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-1" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;HoodieWriteStat&lt;br/&gt;单个文件写入的统计信息 &lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-1" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;HoodieWriteStat&lt;br/&gt;单个文件写入的统计信息 &lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1327" y="545.5" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-3" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;fileId&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-3" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;fileId&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1602" y="542.5" width="70" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-5" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;numWrites&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-5" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;numWrites&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1603" y="575" width="90" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-7" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;numDeletes&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-7" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;numDeletes&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1601" y="514.5" width="90" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-9" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;totalWriteBytes&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-9" value="&lt;pre style=&quot;font-size: 9pt; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;totalWriteBytes&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1603" y="599.5" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="4ouGu83bFTgUQr9YGRA2-15" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;侵入点：&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;元表数据的更新集仅依赖于&amp;nbsp;&lt;span style=&quot;color: rgb(102, 14, 122); font-weight: bold; font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt; background-color: initial;&quot;&gt;stat&amp;nbsp;&lt;/span&gt;而索引依赖于&amp;nbsp;&lt;span style=&quot;font-size: 9pt; background-color: initial; color: rgb(102, 14, 122); font-weight: bold; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;writtenRecords&lt;/span&gt;&lt;/li&gt;&lt;li&gt;元表数据数据结构需要进行变更&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="4ouGu83bFTgUQr9YGRA2-15" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;侵入点：&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;元表数据的更新集仅依赖于&amp;nbsp;&lt;span style=&quot;color: rgb(102, 14, 122); font-weight: bold; font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt; background-color: initial;&quot;&gt;stat&amp;nbsp;&lt;/span&gt;而索引依赖于&amp;nbsp;&lt;span style=&quot;font-size: 9pt; background-color: initial; color: rgb(102, 14, 122); font-weight: bold; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;writtenRecords&lt;/span&gt;&lt;/li&gt;&lt;li&gt;元表数据数据结构需要进行变更&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="900" y="744.5" width="420" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="mhy0scWtgi9zEB-G-xzf" name="commit 代码">
-    <mxGraphModel dx="1662" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
