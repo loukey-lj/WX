@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-07T14:51:12.161Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="8hQw0xKKQkLlOqhzviBK" version="20.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-11-07T15:47:19.813Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="yIWW4hGj6-sMbz0mUkNP" version="20.5.1" type="github" pages="4">
   <diagram id="IaXd8rD6_zRk8KyiqjDc" name="调用链路">
     <mxGraphModel dx="1422" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -221,7 +221,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="EV_8b6ImYduQrRioEZX_" name="hudi 架构">
-    <mxGraphModel dx="1662" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -621,6 +621,9 @@
         </mxCell>
         <mxCell id="4ouGu83bFTgUQr9YGRA2-15" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;侵入点：&lt;/span&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;元表数据的更新集仅依赖于&amp;nbsp;&lt;span style=&quot;color: rgb(102, 14, 122); font-weight: bold; font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt; background-color: initial;&quot;&gt;stat&amp;nbsp;&lt;/span&gt;而索引依赖于&amp;nbsp;&lt;span style=&quot;font-size: 9pt; background-color: initial; color: rgb(102, 14, 122); font-weight: bold; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;writtenRecords&lt;/span&gt;&lt;/li&gt;&lt;li&gt;元表数据数据结构需要进行变更&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="900" y="744.5" width="420" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yk0U7cSDYOOouiVN7kRF-1" value="&lt;div&gt;&lt;div&gt;hdfs://sfbd/hive/warehouse/tech/DM/dm_plat/waybill_hudi_snappy_30_256/.hoodie/metadata/.hoodie&lt;/div&gt;&lt;div&gt;hdfs://sfbd/hive/warehouse/tech/DM/dm_plat/waybill_hudi_snappy_30_256/.hoodie/metadata/files&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;(size,isDeleted)&lt;/div&gt;&lt;div&gt;hdfs://sfbd/hive/warehouse/tech/DM/dm_plat/waybill_hudi_snappy_30_256/.hoodie/metadata/column_stats&amp;nbsp; &amp;nbsp;(minValue,max...)&lt;/div&gt;&lt;div&gt;hdfs://sfbd/hive/warehouse/tech/DM/dm_plat/waybill_hudi_snappy_30_256/.hoodie/metadata/bloom_filters&amp;nbsp; (bloomFilter)&lt;/div&gt;&lt;div&gt;hdfs://sfbd/hive/warehouse/tech/DM/dm_plat/waybill_hudi_snappy_30_256/.hoodie/metadata/record_index&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="960" width="740" height="142" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
