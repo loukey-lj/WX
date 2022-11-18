@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-08T09:07:25.158Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="ffNZSoVmYL6iactdMozo" version="20.5.1" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-11-18T10:20:24.556Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="bg4QVPPU3xc0oRC_bPVR" version="20.5.3" type="github" pages="4">
   <diagram id="IaXd8rD6_zRk8KyiqjDc" name="调用链路">
-    <mxGraphModel dx="1422" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -639,11 +639,99 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="tLkKAh5Qxz78RDnZOQzE" name="第 4 页">
-    <mxGraphModel dx="1422" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="tLkKAh5Qxz78RDnZOQzE" name="bucketIndex">
+    <mxGraphModel dx="1422" dy="1875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="kx7Sr3BbftC039LDc-y7-1" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;BucketIndexPartitioner&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-3" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;partition&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;HoodieKey key, &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;int &lt;/span&gt;numPartitions&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-4" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;curBucket = BucketIdentifier.&lt;span style=&quot;font-style:italic;&quot;&gt;getBucketId&lt;/span&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;key, &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;indexKeyFields&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;bucketNum&lt;/span&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="90" width="550" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-5" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;globalHash = &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;key.getPartitionPath&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;() &lt;/span&gt;+ curBucket&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;.hashCode&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;() &lt;/span&gt;&amp;amp; Integer.&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;MAX_VALUE&lt;/span&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="140" width="590" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-6" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;font-size: 9pt;&quot;&gt;return globalHash&lt;/span&gt; % numPartitions&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="190" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-7" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;numPartitions == write.tasks&lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="55" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-8" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;BucketIndexPartitionerOpt&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="300" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-9" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;partition&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;HoodieKey key, &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;int &lt;/span&gt;numPartitions&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-10" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;return curBucket = BucketIdentifier.&lt;span style=&quot;font-style:italic;&quot;&gt;getBucketId&lt;/span&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;key, &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;indexKeyFields&lt;/span&gt;, &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;bucketNum&lt;/span&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="380" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-13" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;numPartitions == write.tasks&lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="345" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-14" value="&lt;pre style=&quot;background-color:#ffffff;color:#000000;font-family:&#39;Courier New&#39;;font-size:9.0pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;BucketStreamWriteFunction&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="-125" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-15" value="&lt;pre style=&quot;background-color:#ffffff;color:#000000;font-family:&#39;Courier New&#39;;font-size:9.0pt;&quot;&gt;processElement         &lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="1265" y="-85" width="225" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-16" value="&lt;pre style=&quot;background-color:#ffffff;color:#000000;font-family:&#39;Courier New&#39;;font-size:9.0pt;&quot;&gt;bootstrapIndexIfNeed&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;partition&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="-45" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF6666;" edge="1" parent="1" source="kx7Sr3BbftC039LDc-y7-17" target="kx7Sr3BbftC039LDc-y7-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#FF6666;" edge="1" parent="1" source="kx7Sr3BbftC039LDc-y7-17" target="kx7Sr3BbftC039LDc-y7-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1620" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-17" value="&lt;pre style=&quot;background-color:#ffffff;color:#000000;font-family:&#39;Courier New&#39;;font-size:9.0pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;String fileID = fileGroup.getFileGroupId&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;()&lt;/span&gt;.getFileId&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;()&lt;/span&gt;;&lt;br&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;int &lt;/span&gt;bucketNumber = BucketIdentifier.&lt;span style=&quot;font-style:italic;&quot;&gt;bucketIdFromFileId&lt;/span&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;fileID&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;; xxx-0001&lt;br&gt;isBucketToLoad&lt;span style=&quot;font-size: 9pt; white-space: normal; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;font-size: 9pt; white-space: normal; color: rgb(0, 0, 128); font-weight: bold;&quot;&gt;int &lt;/span&gt;&lt;span style=&quot;font-size: 9pt; white-space: normal;&quot;&gt;bucketNumber, String partition&lt;/span&gt;&lt;span style=&quot;font-size: 9pt; white-space: normal; color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF6666;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="-5" width="540" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-18" value="&lt;pre style=&quot;color: rgb(0, 0, 0); font-size: 9pt; text-align: left; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;isBucketToLoad&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;int &lt;/span&gt;bucketNumber, String partition&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;br/&gt;&lt;/span&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;return &lt;/span&gt;bucketNumber == &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;taskID&lt;/span&gt;;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="730" y="390" width="350" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-19" value="&lt;pre style=&quot;color: rgb(0, 0, 0); font-size: 9pt; text-align: left; font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;isBucketToLoad&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;int &lt;/span&gt;bucketNumber, String partition&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;br&gt;&lt;/span&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;int &lt;/span&gt;globalHash = &lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;((&lt;/span&gt;partition + bucketNumber&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;.hashCode&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;()) &lt;/span&gt;&amp;amp; Integer.&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;MAX_VALUE&lt;/span&gt;;&lt;br&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;return &lt;/span&gt;BucketIdentifier.&lt;span style=&quot;font-style:italic;&quot;&gt;mod&lt;/span&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;globalHash, &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;parallelism&lt;/span&gt;&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;) &lt;/span&gt;== &lt;span style=&quot;color:#660e7a;font-weight:bold;&quot;&gt;taskID&lt;/span&gt;;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#FF6666;" vertex="1" parent="1">
+          <mxGeometry x="710" y="100" width="590" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-23" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;BucketIndexPartitionerCustom&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="620" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-24" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;partition&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;(&lt;/span&gt;HoodieKey key, &lt;span style=&quot;color:#000080;font-weight:bold;&quot;&gt;int &lt;/span&gt;numPartitions&lt;span style=&quot;color:#660e7a;font-weight:bold;font-style:italic;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="660" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-26" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff6666&quot;&gt;numPartitions == write.tasks&lt;/font&gt;&lt;/b&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="665" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-28" value="[{&#39;op1&#39;:1},{&#39;op2&#39;,3}]" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="750" y="670" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-29" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="750" y="790" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="kx7Sr3BbftC039LDc-y7-31" target="kx7Sr3BbftC039LDc-y7-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-31" value="获取分区的最后一级" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;" edge="1" parent="1" source="kx7Sr3BbftC039LDc-y7-32" target="kx7Sr3BbftC039LDc-y7-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-32" value="获取分区的 bucket 桶数" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kx7Sr3BbftC039LDc-y7-34" value="&lt;pre style=&quot;font-size: 9pt; background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;;&quot;&gt;return curBucket = BucketIdentifier.&lt;span style=&quot;font-style: italic;&quot;&gt;getBucketId&lt;/span&gt;&lt;span style=&quot;color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;(&lt;/span&gt;key, &lt;span style=&quot;color: rgb(102, 14, 122); font-weight: bold;&quot;&gt;indexKeyFields&lt;/span&gt;, &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;font color=&quot;#ff3333&quot;&gt;分区BUKET个数&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(102, 14, 122); font-weight: bold; font-style: italic;&quot;&gt;)&lt;/span&gt;;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="850" width="590" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
