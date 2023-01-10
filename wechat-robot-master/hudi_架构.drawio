@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-10T05:54:13.524Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="X0cGW6X_F4J5xs5AgEJS" version="20.8.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-01-10T05:55:29.792Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="e9SfL1VuJLk6nA0w5F8f" version="20.8.3" type="github" pages="5">
   <diagram id="IaXd8rD6_zRk8KyiqjDc" name="调用链路">
     <mxGraphModel dx="1434" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -863,7 +863,7 @@
         <mxCell id="pGgP6OyHffbPtV6XqzQa-43" value="特别的如果合并后的分区和删除记录所在分区一致，则还需要把 location 设置回去，让一条 Insert 数据变更 update 数据" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="800" y="485" width="220" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="pGgP6OyHffbPtV6XqzQa-44" value="变成 delete 数据后并且标识这条记录是已经合并过的不需要再次合并" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="pGgP6OyHffbPtV6XqzQa-44" value="变成 update 数据后并且标识这条记录是已经合并过的不需要再次合并" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1120" y="485" width="190" height="45" as="geometry" />
         </mxCell>
         <mxCell id="pGgP6OyHffbPtV6XqzQa-49" value="" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="pGgP6OyHffbPtV6XqzQa-46" target="pGgP6OyHffbPtV6XqzQa-48" edge="1">
