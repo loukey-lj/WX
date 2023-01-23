@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-22T14:17:17.590Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="FxCzxCf-wFQOUmaE-XUJ" version="20.8.3" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-01-23T01:58:26.202Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36" etag="zkltrr9R7irU3fKptqoz" version="20.8.3" type="github" pages="6">
   <diagram id="IaXd8rD6_zRk8KyiqjDc" name="调用链路">
     <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1482,19 +1482,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-7" value="OperatorEventGatewayImpl" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="30" y="200" width="300" height="80" as="geometry" />
+          <mxGeometry x="40" y="300" width="250" height="80" as="geometry" />
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-8" value="- TaskOperatorEventGateway toCoordinator" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="mkH2E8pbGgfcxaQ9S9_Y-7">
-          <mxGeometry y="26" width="300" height="24" as="geometry" />
+          <mxGeometry y="26" width="250" height="24" as="geometry" />
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-18" value="sendEventToCoordinator" style="text;strokeColor=default;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="mkH2E8pbGgfcxaQ9S9_Y-7">
-          <mxGeometry y="50" width="300" height="30" as="geometry" />
+          <mxGeometry y="50" width="250" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-19" value="«interface»&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;OperatorEventGateway&lt;/span&gt;" style="html=1;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="30" y="40" width="370" height="40" as="geometry" />
+          <mxGeometry x="30" y="40" width="310" height="40" as="geometry" />
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-21" value="+ sendEventToCoordinator(OperatorEvent event):&amp;nbsp; void" style="html=1;strokeColor=default;align=left;" vertex="1" parent="1">
-          <mxGeometry x="30" y="80" width="370" height="40" as="geometry" />
+          <mxGeometry x="30" y="80" width="310" height="40" as="geometry" />
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-26" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.524;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="mkH2E8pbGgfcxaQ9S9_Y-27" target="mkH2E8pbGgfcxaQ9S9_Y-31">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1503,7 +1503,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-27" value="RpcTaskOperatorEventGateway" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="457" y="200" width="623" height="80" as="geometry" />
+          <mxGeometry x="467" y="300" width="623" height="80" as="geometry" />
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-28" value="- JobMasterOperatorEventGateway rpcGateway" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="mkH2E8pbGgfcxaQ9S9_Y-27">
           <mxGeometry y="26" width="623" height="24" as="geometry" />
@@ -1526,13 +1526,61 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-36" value="&lt;div style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;public void &lt;/span&gt;&lt;span style=&quot;color:#ffc66d;&quot;&gt;sendOperatorEventToCoordinator&lt;/span&gt;(&lt;br&gt;        OperatorID operator&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;SerializedValue&amp;lt;OperatorEvent&amp;gt; event) {&lt;br&gt;    &lt;span style=&quot;color:#cc7832;&quot;&gt;final &lt;/span&gt;CompletableFuture&amp;lt;Acknowledge&amp;gt; result =&lt;br&gt;            &lt;span style=&quot;color:#9876aa;&quot;&gt;rpcGateway&lt;/span&gt;.sendOperatorEventToCoordinator(&lt;span style=&quot;color:#9876aa;&quot;&gt;taskExecutionId&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;operator&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;event)&lt;span style=&quot;color:#cc7832;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;    &lt;/span&gt;result.whenComplete(&lt;br&gt;            (success&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;exception) -&amp;gt; {&lt;br&gt;                &lt;span style=&quot;color:#cc7832;&quot;&gt;if &lt;/span&gt;(exception != &lt;span style=&quot;color:#cc7832;&quot;&gt;null&lt;/span&gt;) {&lt;br&gt;                    &lt;span style=&quot;color:#9876aa;&quot;&gt;errorHandler&lt;/span&gt;.accept(exception)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;                &lt;/span&gt;}&lt;br&gt;            })&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;}&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;labelBorderColor=default;" vertex="1" parent="1">
-          <mxGeometry x="455" y="236" width="695" height="212" as="geometry" />
+          <mxGeometry x="465" y="341" width="625" height="194" as="geometry" />
         </mxCell>
-        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-38" value="«interface»&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;TaskOperatorEventGateway&lt;/span&gt;" style="html=1;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="1180" y="40" width="560" height="40" as="geometry" />
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-38" value="«interface»&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;JobMasterOperatorEventGateway&lt;/span&gt;" style="html=1;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="40" width="450" height="50" as="geometry" />
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-39" value="+&amp;nbsp;&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;sendOperatorEventToCoordinator&lt;/span&gt;:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;CompletableFuture&amp;lt;Acknowledge&amp;gt;&lt;/span&gt;" style="html=1;strokeColor=default;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1180" y="80" width="560" height="40" as="geometry" />
+          <mxGeometry x="1180" y="80" width="450" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-40" value="«interface»&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;JobMasterGateway&lt;/span&gt;" style="html=1;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1175" y="200" width="451" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-41" value="+&amp;nbsp;&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;sendOperatorEventToCoordinator&lt;/span&gt;:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;CompletableFuture&amp;lt;Acknowledge&amp;gt;&lt;/span&gt;" style="html=1;strokeColor=default;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1175" y="240" width="451" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-43" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.524;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="mkH2E8pbGgfcxaQ9S9_Y-40">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1470.04" y="200" as="sourcePoint" />
+            <mxPoint x="1460" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-44" value="«interface»&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;CheckpointCoordinatorGateway&lt;/span&gt;" style="html=1;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="80" width="212" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-45" value="+&amp;nbsp;&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;acknowledgeCheckpoint&lt;/span&gt;:&amp;nbsp; void" style="html=1;strokeColor=default;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1670" y="120" width="212" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-46" value="«interface»&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;RpcGateway&lt;/span&gt;" style="html=1;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1930" y="5" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-47" value="+&amp;nbsp; &lt;font face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;font-size: 13.0667px;&quot;&gt;getAddress()&lt;/span&gt;&lt;/font&gt;:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.0667px;&quot;&gt;String&lt;br&gt;&lt;/span&gt;+&amp;nbsp;&amp;nbsp;&lt;font style=&quot;border-color: var(--border-color);&quot; face=&quot;JetBrains Mono, monospace&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-size: 13.0667px;&quot;&gt;getHostName()&lt;/span&gt;&lt;/font&gt;:&amp;nbsp;&amp;nbsp;&lt;span style=&quot;border-color: var(--border-color); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.0667px;&quot;&gt;String&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 13.0667px;&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="html=1;strokeColor=default;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1930" y="45" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-48" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="mkH2E8pbGgfcxaQ9S9_Y-44">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1459" y="210" as="sourcePoint" />
+            <mxPoint x="1920" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-49" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="mkH2E8pbGgfcxaQ9S9_Y-40" target="mkH2E8pbGgfcxaQ9S9_Y-45">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1459" y="210" as="sourcePoint" />
+            <mxPoint x="1470" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-50" value="JobMaster" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1177" y="310" width="623" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-51" value="- JobMasterOperatorEventGateway rpcGateway" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="mkH2E8pbGgfcxaQ9S9_Y-50">
+          <mxGeometry y="26" width="623" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-52" value="sendEventToCoordinator" style="text;strokeColor=default;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="mkH2E8pbGgfcxaQ9S9_Y-50">
+          <mxGeometry y="50" width="623" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-53" value="&lt;div style=&quot;color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre&gt;&lt;div style=&quot;background-color: rgb(43, 43, 43); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;public &lt;/span&gt;CompletableFuture&amp;lt;Acknowledge&amp;gt; &lt;span style=&quot;color:#ffc66d;&quot;&gt;sendOperatorEventToCoordinator&lt;/span&gt;(&lt;br&gt;        &lt;span style=&quot;color:#cc7832;&quot;&gt;final &lt;/span&gt;ExecutionAttemptID task&lt;span style=&quot;color:#cc7832;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;        final &lt;/span&gt;OperatorID operatorID&lt;span style=&quot;color:#cc7832;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;        final &lt;/span&gt;SerializedValue&amp;lt;OperatorEvent&amp;gt; serializedEvent) {&lt;br&gt;&lt;br&gt;    &lt;span style=&quot;color:#cc7832;&quot;&gt;try &lt;/span&gt;{&lt;br&gt;        &lt;span style=&quot;color:#cc7832;&quot;&gt;final &lt;/span&gt;OperatorEvent evt = serializedEvent.deserializeValue(&lt;span style=&quot;color:#9876aa;&quot;&gt;userCodeLoader&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#9876aa;&quot;&gt;schedulerNG&lt;/span&gt;.deliverOperatorEventToCoordinator(task&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;operatorID&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;evt)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;        return &lt;/span&gt;CompletableFuture.&lt;span style=&quot;font-style:italic;&quot;&gt;completedFuture&lt;/span&gt;(Acknowledge.&lt;span style=&quot;font-style:italic;&quot;&gt;get&lt;/span&gt;())&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;    &lt;/span&gt;} &lt;span style=&quot;color:#cc7832;&quot;&gt;catch &lt;/span&gt;(Exception e) {&lt;br&gt;        &lt;span style=&quot;color:#cc7832;&quot;&gt;return &lt;/span&gt;FutureUtils.&lt;span style=&quot;font-style:italic;&quot;&gt;completedExceptionally&lt;/span&gt;(e)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;    &lt;/span&gt;}&lt;br&gt;}&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=default;labelBorderColor=default;" vertex="1" parent="1">
+          <mxGeometry x="1175" y="420" width="625" height="194" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
