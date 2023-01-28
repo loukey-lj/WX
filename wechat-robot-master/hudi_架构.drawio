@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-28T02:31:08.204Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="wqrVswC6EWMBW_PQf6Dp" version="20.8.5" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-01-28T06:05:07.444Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="ORAHR6KmZPwSnWCS9Mmo" version="20.8.5" type="github" pages="6">
   <diagram id="IaXd8rD6_zRk8KyiqjDc" name="调用链路">
     <mxGraphModel dx="1434" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -221,7 +221,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="EV_8b6ImYduQrRioEZX_" name="hudi 架构">
-    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -629,7 +629,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mhy0scWtgi9zEB-G-xzf" name="commit 代码">
-    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -640,7 +640,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="tLkKAh5Qxz78RDnZOQzE" name="bucketIndex">
-    <mxGraphModel dx="1434" dy="1925" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -872,7 +872,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="i2uRV0BGqW_lOQBtzcIq" name="spark-hudi更新细节">
-    <mxGraphModel dx="2261" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2261" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1592,6 +1592,9 @@
             <mxPoint x="1844" y="285" as="sourcePoint" />
             <mxPoint x="1855" y="205" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="IVx6cBqFOYm7D594LZP6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="HAVGJsquic4JBImgqEJB-25" source="mkH2E8pbGgfcxaQ9S9_Y-50" target="mkH2E8pbGgfcxaQ9S9_Y-41">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mkH2E8pbGgfcxaQ9S9_Y-50" value="JobMaster" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="HAVGJsquic4JBImgqEJB-25" vertex="1">
           <mxGeometry x="1562" y="385" width="623" height="80" as="geometry" />
