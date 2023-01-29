@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-28T06:05:07.444Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="ORAHR6KmZPwSnWCS9Mmo" version="20.8.5" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-01-29T06:18:31.608Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="7Grwr9CBznn63F2MZWPX" version="20.8.5" type="github" pages="7">
   <diagram id="IaXd8rD6_zRk8KyiqjDc" name="调用链路">
-    <mxGraphModel dx="1434" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -221,7 +221,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="EV_8b6ImYduQrRioEZX_" name="hudi 架构">
-    <mxGraphModel dx="1434" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -629,7 +629,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mhy0scWtgi9zEB-G-xzf" name="commit 代码">
-    <mxGraphModel dx="1434" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -640,7 +640,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="tLkKAh5Qxz78RDnZOQzE" name="bucketIndex">
-    <mxGraphModel dx="1434" dy="1877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1925" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -872,7 +872,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="i2uRV0BGqW_lOQBtzcIq" name="spark-hudi更新细节">
-    <mxGraphModel dx="2261" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2261" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1471,7 +1471,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="fVi3dyeu-WZ21Glzch9k" name="hudi 协调器">
-    <mxGraphModel dx="1434" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1638,6 +1638,171 @@
         </mxCell>
         <mxCell id="HAVGJsquic4JBImgqEJB-11" value="&lt;b style=&quot;font-size: 18px;&quot;&gt;以 TM 发送事件给 coordinator 为例了解 FLINK&amp;nbsp; 组件之间的通信架构&lt;br&gt;checkpoint 也是如此 TM 执行完 snapshot 会发送 ack 给 checkpoint 协调器&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="HAVGJsquic4JBImgqEJB-25" vertex="1">
           <mxGeometry x="70" y="30" width="740" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="BX-SKdokiwTKceH4ZLUN" name="第 7 页">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h5PyHWdwo_64staAad9n-43" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="564" y="435" width="230" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-33" value="" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="224" y="404" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-1" target="h5PyHWdwo_64staAad9n-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-1" value="source" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-2" target="h5PyHWdwo_64staAad9n-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-2" value="map to hoodieRecord" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-4" target="h5PyHWdwo_64staAad9n-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-4" value="bucket write" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="454" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-6" value="partitioner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-7" value="other" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="71" width="90" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-9" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;write coordinator&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="454" y="200" width="126" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-12" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.471;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="520.0699999999999" y="196" as="sourcePoint" />
+            <mxPoint x="520" y="136" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-13" target="h5PyHWdwo_64staAad9n-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-13" value="p1:id1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="34" y="359" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-14" target="h5PyHWdwo_64staAad9n-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-14" value="p1:id2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="34" y="439" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-15" target="h5PyHWdwo_64staAad9n-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-15" value="p1:id3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="34" y="509" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-16" target="h5PyHWdwo_64staAad9n-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-16" value="p1:id4" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="34" y="589" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-17" target="h5PyHWdwo_64staAad9n-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-17" target="h5PyHWdwo_64staAad9n-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-17" target="h5PyHWdwo_64staAad9n-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-17" value="partitioner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="154" y="473" width="90" height="41" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;startArrow=none;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-56" target="h5PyHWdwo_64staAad9n-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-22" value="bucket write -subtask0" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="314" y="359" width="140" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;startArrow=none;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-51" target="h5PyHWdwo_64staAad9n-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-23" value="bucket write -subtask1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="313" y="588" width="141" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-26" value="p1:id1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="418" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-28" value="p1:id3" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="443" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-32" value="p1 是 分区&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;id 是主键&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="34" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-34" value="bucket -0" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="222" y="397" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-35" value="" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="225" y="529" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-36" value="p1:id2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="543" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-37" value="p1:id4" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="255" y="568" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-38" value="bucket -1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="223" y="522" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-40" target="h5PyHWdwo_64staAad9n-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-59" value="返回&amp;nbsp; fileid:&amp;nbsp;00000000-xxxx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h5PyHWdwo_64staAad9n-52">
+          <mxGeometry x="-0.0523" relative="1" as="geometry">
+            <mxPoint x="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-40" value="hdfs://xx/p1/00000000-xxxx.log" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="594" y="460" width="200" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-41" target="h5PyHWdwo_64staAad9n-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-60" value="返回 fileid:&amp;nbsp;00000001-xxxx" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="h5PyHWdwo_64staAad9n-53">
+          <mxGeometry x="0.0241" relative="1" as="geometry">
+            <mxPoint x="28" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-41" value="hdfs://xx/p1/00000001-xxxx.log" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="594" y="512" width="200" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-42" value="&lt;pre style=&quot;background-color: rgb(255, 255, 255); font-family: &amp;quot;Courier New&amp;quot;; font-size: 9pt;&quot;&gt;区器确保同一个分区的同一个&lt;br/&gt;桶的数据分发到下游的同一个 &lt;br/&gt;bucket write subtask&lt;/pre&gt;" style="text;html=1;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="124" y="320" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-48" value="HUDI FS" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="564" y="435" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-57" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-22" target="h5PyHWdwo_64staAad9n-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="454" y="384.5" as="sourcePoint" />
+            <mxPoint x="564" y="502.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-56" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;根据 分区和 bucket &lt;br&gt;获取对应的 fileId&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="430" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=default;endArrow=none;" edge="1" parent="1" source="h5PyHWdwo_64staAad9n-23" target="h5PyHWdwo_64staAad9n-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="454" y="614" as="sourcePoint" />
+            <mxPoint x="564" y="502.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h5PyHWdwo_64staAad9n-51" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;根据 分区和 bucket &lt;br&gt;获取对应的 fileId&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="528" width="110" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
