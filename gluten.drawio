@@ -1,9 +1,45 @@
-<mxfile host="app.diagrams.net" modified="2023-06-04T01:54:21.308Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" version="21.3.7" etag="QMPxl1zd5TDIKadXKSw0" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-04T02:30:37.299Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="4IrAXC33xrCSAgVjNuz9" version="21.3.7" type="github">
   <diagram name="Page-1" id="vqW_PlP45tHpt-xlMKGE">
-    <mxGraphModel>
+    <mxGraphModel dx="2284" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="VYUMSfwm_iAysG9PBb61-1" value="&lt;div style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre&gt;ColumnarShuffleManager&lt;/pre&gt;&lt;pre&gt;&lt;div style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;pre&gt;     &lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="90" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-2" value="&lt;pre style=&quot;border-color: var(--border-color); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 13.0667px; color: rgb(169, 183, 198); text-align: left;&quot;&gt;&lt;br&gt;&lt;/pre&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="260" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-3" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-5" value="&lt;pre style=&quot;border-color: var(--border-color); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 13.0667px; color: rgb(169, 183, 198); text-align: left;&quot;&gt;ColumnarShuffleManager&lt;/pre&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="320" y="60" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-6" value="ColumnarShuffleManager" style="rounded=1;labelBorderColor=none;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-8" value="registerShuffle" style="rounded=1;labelBorderColor=none;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-11" value="ColumnarShuffleDependency&lt;br&gt;" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBorderColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="510" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-12" value="ColumnarShuffleHandle" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBorderColor=none;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="180" y="540" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-14" value="&lt;div style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre&gt;getWriter&lt;/pre&gt;&lt;/div&gt;" style="rounded=1;labelBorderColor=none;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="80" y="620" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-15" value="&lt;div style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre&gt;columnarShuffleHandle&lt;/pre&gt;&lt;/div&gt;" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBorderColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="650" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-16" value="&lt;div style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre&gt;&lt;div style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre&gt;GlutenShuffleWriterWrapper&lt;/pre&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBorderColor=none;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="180" y="680" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VYUMSfwm_iAysG9PBb61-17" value="&lt;div style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre&gt;GlutenColumnarShuffleWriter&lt;/pre&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="710" width="220" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
