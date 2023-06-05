@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-05T04:29:14.072Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="C-vWmS4PmMRdS1OPMaOt" version="21.1.6" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-06-05T09:54:42.386Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="-f6fjfBHhCnK94-BRgrv" version="21.1.6" type="github" pages="2">
   <diagram name="Page-1" id="vqW_PlP45tHpt-xlMKGE">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -50,7 +50,7 @@
           <mxGeometry x="190" y="970" width="400" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VYUMSfwm_iAysG9PBb61-37" value="val serializerInstance = dep.serializer.newInstance()&#xa;serializerInstance.deserializeStream(wrappedStream).asKeyValueIterator" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="230" y="1000" width="530" height="40" as="geometry" />
+          <mxGeometry x="260" y="1000" width="530" height="40" as="geometry" />
         </mxCell>
         <mxCell id="VYUMSfwm_iAysG9PBb61-39" value="io.glutenproject.vectorized.GlutenColumnarBatchSerializerInstance#deserializeStream" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="270" y="1040" width="480" height="30" as="geometry" />
@@ -92,19 +92,7 @@
           <mxGeometry x="820" y="920" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="VYUMSfwm_iAysG9PBb61-53" value="org.apache.spark.shuffle.celeborn.RssShuffleReader" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBorderColor=none;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="882" y="947" width="370" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="VYUMSfwm_iAysG9PBb61-54" value="org.apache.spark.shuffle.BlockStoreShuffleReader#read" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="880" y="967" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="VYUMSfwm_iAysG9PBb61-55" value="val serializerInstance = dep.serializer.newInstance()&#xa;serializerInstance.deserializeStream(wrappedStream).asKeyValueIterator" style="text;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="920" y="1000" width="530" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="VYUMSfwm_iAysG9PBb61-56" value="io.glutenproject.vectorized.GlutenColumnarBatchSerializerInstance#deserializeStream" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="960" y="1040" width="480" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="VYUMSfwm_iAysG9PBb61-57" value="org.apache.spark.shuffle.CelebornColumnarBatchSerializerInstance#deserializeStream" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="960" y="1068" width="490" height="30" as="geometry" />
+          <mxGeometry x="850" y="950" width="370" height="20" as="geometry" />
         </mxCell>
         <mxCell id="QsT5lhJbDTpNVHiUyBn--1" value="pushPartitionData(partitionId: Int, buffer: Array[Byte])&lt;br&gt;client.pushData/mergeData&lt;br&gt;client.pushOrMergeData" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="1">
           <mxGeometry x="1000" y="760" width="300" height="60" as="geometry" />
@@ -130,145 +118,213 @@
         <mxCell id="QsT5lhJbDTpNVHiUyBn--10" value="HashBasedShuffleWriter(ShuffleClient)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1700" y="670" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QsT5lhJbDTpNVHiUyBn--12" value="TODO&lt;br&gt;&amp;nbsp; &amp;nbsp;1、gluten 字节 是怎么加工写入 celeborn 的， 看下有没有 额外的加工逻辑，是不是原生 gluten 的字节&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1.1 压缩&amp;nbsp;&amp;nbsp;compressor.compress(data, offset, length);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1.2 头部 16 位放 mapId,&amp;nbsp;attemptId,&amp;nbsp;nextBatchId, 数据长度 compressedTotalSize&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1.3 包装成&amp;nbsp;PushData pushData = new PushData(MASTER_MODE, shuffleKey, loc.getUniqueId(), buffer);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1.4&amp;nbsp;TransportClient.pushData(pushData)&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; 2、celeborn 是怎么反解出来的, 反解成什么东西了&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; 3、gluten 自己反序列化时反序列化成什么东西了&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="2200" y="470" width="620" height="170" as="geometry" />
+        <mxCell id="QsT5lhJbDTpNVHiUyBn--12" value="TODO&lt;br&gt;&amp;nbsp; &amp;nbsp;1、gluten 字节 是怎么加工写入 celeborn 的， 看下有没有 额外的加工逻辑，是不是原生 gluten 的字节&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1.1 压缩&amp;nbsp;&amp;nbsp;compressor.compress(data, offset, length);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1.2 头部 16 位放 mapId,&amp;nbsp;attemptId,&amp;nbsp;nextBatchId, 数据长度 compressedTotalSize&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1.3 包装成&amp;nbsp;PushData pushData = new PushData(MASTER_MODE, shuffleKey, loc.getUniqueId(), buffer);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1.4&amp;nbsp;TransportClient.pushData(pushData)&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; 2、celeborn 是怎么反解出来的, 反解成什么东西了&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;DeserializationStream&amp;nbsp;deserializeStream =&amp;nbsp; org.apache.spark.sql.execution.columnar.RssColumnarBatchSerializerInstance#deserializeStream(InputStream)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Iterator[(Int, InternalRow)] = deserializeStream.asKeyValueIterator -&amp;gt;&amp;nbsp;nextBatch&lt;br&gt;&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; val columnVectors =&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if (!offHeapColumnVectorEnabled) {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; OnHeapColumnVector.allocateColumns(numRows, schema)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; } else {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; OffHeapColumnVector.allocateColumns(numRows, schema)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; val columnarBatch = new ColumnarBatch(columnVectors.asInstanceOf[Array[ColumnVector]])&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; 3、gluten 自己反序列化时反序列化成什么东西了&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2190" y="490" width="1250" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-1" value="org.apache.spark.sql.execution.ColumnarShuffleExchangeExec#serializer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1160" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-2" value="io.glutenproject.backendsapi.glutendata.GlutenSparkPlanExecApi#createColumnarBatchSerializer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1185" width="550" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-3" value="if&amp;nbsp;isUseCelebornShuffleManager" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1210" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-4" value="org.apache.spark.shuffle.CelebornColumnarBatchSerializer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1235" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-5" value="else GlutenColumnarBatchSerializer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1265" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-6" value="然而并没有实现序列化方法" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1240" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-7" value="org.apache.spark.shuffle.celeborn.RssShuffleReader#read" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="880" y="970" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-8" value="serializerInstance = dep.serializer.newInstance()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1000" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-9" value="if&amp;nbsp;columnarShuffleEnabled &amp;amp;&amp;amp;&amp;nbsp;supportsColumnarType(schema)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1020" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-10" value="serializerInstance = new RssColumnarBatchSerializer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1050" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_a0TQYlq61xRrtFDFQDI-11" value="val recordIter = (startPartition until endPartition).iterator.map(partitionId =&amp;gt;{&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;val inputStream = rssShuffleClient.readPartition(appId, shuffleId, partitionId, attemptId,0,Int.MaxValue)&lt;br&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Helvetica; font-size: 12px; font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-family: Helvetica; font-size: 12px; font-weight: normal;&quot;&gt;}&lt;/span&gt;.flatMap(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; serializerInstance.deserializeStream(_).asKeyValueIterator)&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="960" y="1083" width="570" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="f0OTCfRNCTB2iKRCa9P-" name="Page-2">
-    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1674" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="-LDWmFvmeUUydARrXd1d-1" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="80" y="120" as="sourcePoint" />
-            <mxPoint x="360" y="120" as="targetPoint" />
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iO1HhjMRqrYUtXoviHuo-2" target="ag-5AsOvkKHU-9Suy-c1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-15" value="getWriter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Bv6SpbKrFaZBJMjKbw5c-14">
+          <mxGeometry x="-0.0951" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-2" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="360" y="120" as="sourcePoint" />
-            <mxPoint x="640" y="120" as="targetPoint" />
+        <mxCell id="24NoGxlCW-XOWuzY0WUe-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iO1HhjMRqrYUtXoviHuo-2" target="24NoGxlCW-XOWuzY0WUe-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250" y="70" />
+              <mxPoint x="250" y="390" />
+              <mxPoint x="380" y="390" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-3" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint y="280" as="sourcePoint" />
-            <mxPoint x="280" y="280" as="targetPoint" />
+        <mxCell id="24NoGxlCW-XOWuzY0WUe-4" value="getReader" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="24NoGxlCW-XOWuzY0WUe-3">
+          <mxGeometry x="0.208" y="5" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-4" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="280" y="280" as="sourcePoint" />
-            <mxPoint x="560" y="280" as="targetPoint" />
+        <mxCell id="iO1HhjMRqrYUtXoviHuo-2" value="CelebornShuffleManager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ag-5AsOvkKHU-9Suy-c1-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="70" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-5" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint y="280" as="sourcePoint" />
-            <mxPoint x="80" y="120" as="targetPoint" />
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-17" value="internalWrite" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Bv6SpbKrFaZBJMjKbw5c-9">
+          <mxGeometry x="-0.196" y="-4" relative="1" as="geometry">
+            <mxPoint x="1" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-6" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="560" y="280" as="sourcePoint" />
-            <mxPoint x="640" y="120" as="targetPoint" />
+        <mxCell id="ag-5AsOvkKHU-9Suy-c1-4" value="CelebornHashBasedColumnarShuffleWriter（ShuffleClient）" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="40" width="265" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Bv6SpbKrFaZBJMjKbw5c-18" target="Q_T0xvldnaPgb1Z-qR_q-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-5" value="C" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q_T0xvldnaPgb1Z-qR_q-4">
+          <mxGeometry x="-0.3488" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-7" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="280" y="280" as="sourcePoint" />
-            <mxPoint x="360" y="120" as="targetPoint" />
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-18" value="jniWrapper.makeForRSS（celebornPartitionPusher&amp;nbsp;）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="760" y="80" width="290" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-19" value="&lt;div&gt;celebornPartitionPusher = new CelebornPartitionPusher(....&lt;span style=&quot;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="1">
+          <mxGeometry x="750" y="36" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.57;exitY=-0.023;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-3" target="Bv6SpbKrFaZBJMjKbw5c-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-7" value="反射回调" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q_T0xvldnaPgb1Z-qR_q-6">
+          <mxGeometry x="-0.4667" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-8" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="138" y="280" as="sourcePoint" />
-            <mxPoint x="218" y="120" as="targetPoint" />
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-3" value="细节未知" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="68" width="100" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-8" target="Q_T0xvldnaPgb1Z-qR_q-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-11" value="pushPartitionData" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q_T0xvldnaPgb1Z-qR_q-10">
+          <mxGeometry x="-0.3693" y="2" relative="1" as="geometry">
+            <mxPoint x="22" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-9" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="417" y="280" as="sourcePoint" />
-            <mxPoint x="497" y="120" as="targetPoint" />
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-8" value="CelebornPartitionPusher&lt;br&gt;&amp;nbsp; &amp;nbsp;pushPartitionData(partitionId: Int, buffer: Array[Byte])" style="whiteSpace=wrap;html=1;rounded=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="130" width="302.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-9" value="client.pushData/mergeData&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 12px; font-family: Helvetica;&quot;&gt;client.pushOrMergeData&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="130" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4ELQZ7cQL_2lh3KPE_tf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-12" target="Q_T0xvldnaPgb1Z-qR_q-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4ELQZ7cQL_2lh3KPE_tf-6" value="pushOrMergeData" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4ELQZ7cQL_2lh3KPE_tf-1">
+          <mxGeometry x="-0.3818" relative="1" as="geometry">
+            <mxPoint x="20" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-10" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="67" y="280" as="sourcePoint" />
-            <mxPoint x="147" y="120" as="targetPoint" />
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-12" value="ShuffleClientImpl" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="357.5" y="240" width="182.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-13" value="compressor：LZ4/ZSTD&lt;br&gt;compressor.compress(data, offset, length);&lt;br&gt;压缩数据放入&amp;nbsp;byte[] body&lt;br&gt;body 前用 16 位来存4个&amp;nbsp;int&amp;nbsp;&amp;nbsp;mapId,attemptId,nextBatchId,compressedTotalSize&lt;br&gt;包装成&amp;nbsp;PushData pushData = new PushData(MASTER_MODE, shuffleKey, loc.getUniqueId(), buffer);&lt;br&gt;TransportClient.pushData(pushData)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="215" width="550" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="24NoGxlCW-XOWuzY0WUe-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-11" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="205" y="280" as="sourcePoint" />
-            <mxPoint x="285" y="120" as="targetPoint" />
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-11" value="获取序列化器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8zj__Zkj_Gjuy6MGKbzn-9">
+          <mxGeometry x="-0.283" y="2" relative="1" as="geometry">
+            <mxPoint x="36" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-12" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="345" y="280" as="sourcePoint" />
-            <mxPoint x="425" y="120" as="targetPoint" />
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="24NoGxlCW-XOWuzY0WUe-2" target="8zj__Zkj_Gjuy6MGKbzn-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-2" value="循环每一个partition&lt;br style=&quot;border-color: var(--border-color); font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; background-color: rgb(251, 251, 251);&quot;&gt;val inputStream = rssShuffleClient.readPartition&lt;br&gt;出来的流应该是去掉了前 16 位&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; background-color: rgb(251, 251, 251);&quot;&gt;serializerInstance.deserializeStream(inputStream&amp;nbsp;)&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8zj__Zkj_Gjuy6MGKbzn-19">
+          <mxGeometry x="0.4302" y="5" relative="1" as="geometry">
+            <mxPoint x="-130" y="-27" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-13" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="495" y="280" as="sourcePoint" />
-            <mxPoint x="575" y="120" as="targetPoint" />
+        <mxCell id="24NoGxlCW-XOWuzY0WUe-2" value="RssShuffleReader#read" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="361" y="360" width="129" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gj6j2B2aXCY3r2UFVUmw-3" target="8zj__Zkj_Gjuy6MGKbzn-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gj6j2B2aXCY3r2UFVUmw-3" value="//默认从 ShuffleDependency 中获取&lt;br&gt;serializerInstance = dep.serializer.newInstance()&lt;br&gt;&lt;br&gt;// 如果 celeborn 开启了&amp;nbsp;olumnarShuffle 并且所有字段都支持列存&lt;br&gt;//就用&amp;nbsp;RssColumnarBatchSerializer&lt;br&gt;if&amp;nbsp;columnarShuffleEnabled &amp;amp;&amp;amp;&amp;nbsp;supportsColumnarType(schema)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;serializerInstance = new RssColumnarBatchSerializer" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="335" width="370" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-12" value="gluten 在构建&amp;nbsp;ShuffleDependency&amp;nbsp; 时指定了&lt;br&gt;org.apache.spark.sql.execution.ColumnarShuffleExchangeExec#serializer&lt;br&gt;&amp;nbsp; &amp;nbsp;if&amp;nbsp;isUseCelebornShuffleManager&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;org.apache.spark.shuffle.CelebornColumnarBatchSerializer&amp;nbsp;然而并没有实现序列化方法&lt;br&gt;&amp;nbsp; &amp;nbsp;else&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;else GlutenColumnarBatchSerializer" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="340" width="510" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-14" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="937.5" y="242.5" width="85" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-15" value="serializerInstance&amp;nbsp; 应该是&amp;nbsp;CelebornColumnarBatchSerializer&amp;nbsp; 或者&amp;nbsp;RssColumnarBatchSerializer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="710" y="535" width="530" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8zj__Zkj_Gjuy6MGKbzn-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="830" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-14" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint y="280" as="sourcePoint" />
-            <mxPoint y="600" as="targetPoint" />
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-5" value="RssColumnarBatchSerializer#nextBatch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="g0M5Z7LU6KuPDxk4xlls-4">
+          <mxGeometry x="-0.2" y="2" relative="1" as="geometry">
+            <mxPoint x="17" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-16" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="280" y="280" as="sourcePoint" />
-            <mxPoint x="280" y="600" as="targetPoint" />
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8zj__Zkj_Gjuy6MGKbzn-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="870" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="530" y="630" />
+              <mxPoint x="530" y="870" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-17" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="560" y="280" as="sourcePoint" />
-            <mxPoint x="560" y="600" as="targetPoint" />
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-16" value="deserializeStream" style="whiteSpace=wrap;html=1;rounded=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="333" y="600" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0M5Z7LU6KuPDxk4xlls-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1330" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-18" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="640" y="130" as="sourcePoint" />
-            <mxPoint x="640" y="450" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-6" value="1、readInt 获取&amp;nbsp;numRows&lt;br&gt;2、循环schema 列&lt;br&gt;3、 获取列的长度&lt;br&gt;4、读取 bytes&lt;br&gt;5、RssColumnAccessor.decompress(bytes)&amp;nbsp;&lt;br&gt;6、为每列构建一个&amp;nbsp;org.apache.spark.sql.vectorized.ColumnarBatch&lt;br&gt;7、columnarBatch.rowIterator() 返回&amp;nbsp; &amp;nbsp;Iterator[InternalRow] 这里没看懂" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="580" width="410" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-21" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="50" y="190" as="sourcePoint" />
-            <mxPoint x="330" y="190" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-9" value="压缩算法是根据字段类型来的，不是之前的 LZ4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="615" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-22" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="330" y="190" as="sourcePoint" />
-            <mxPoint x="610" y="190" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-23" value="2.4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="160" y="410" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-25" value="2.4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="570" y="220" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-26" value="2.1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="460" y="80" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-27" value="2.1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="200" y="70" width="60" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="-LDWmFvmeUUydARrXd1d-28" value="2.4M&amp;nbsp; 15 根&lt;br&gt;2.1M 6 根&lt;br&gt;连接器 3 个 将 两个2.1 连接成 4.2 米&lt;br&gt;卡扣 35 个" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="310" y="350" width="220" height="70" as="geometry" />
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-12" value="jniByteInputStream = JniByteInputStreams.create(in)&lt;br&gt;c ++ shuffleReaderHandle&lt;br&gt;nextValue&amp;nbsp;ShuffleReaderJniWrapper.INSTANCE.next(shuffleReaderHandle)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="835" width="430" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
