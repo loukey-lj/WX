@@ -1,18 +1,18 @@
-<mxfile host="app.diagrams.net" modified="2023-06-05T09:54:59.152Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="_vvzpFysrq46RQZ8ipAG" version="21.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-06T07:55:01.361Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="AiEzcZ073k5xEEZEBXdu" version="21.3.7" type="github">
   <diagram id="f0OTCfRNCTB2iKRCa9P-" name="Page-2">
-    <mxGraphModel dx="1674" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iO1HhjMRqrYUtXoviHuo-2" target="ag-5AsOvkKHU-9Suy-c1-4">
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="iO1HhjMRqrYUtXoviHuo-2" target="ag-5AsOvkKHU-9Suy-c1-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-15" value="getWriter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Bv6SpbKrFaZBJMjKbw5c-14">
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-15" value="getWriter" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Bv6SpbKrFaZBJMjKbw5c-14" vertex="1" connectable="0">
           <mxGeometry x="-0.0951" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="24NoGxlCW-XOWuzY0WUe-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iO1HhjMRqrYUtXoviHuo-2" target="24NoGxlCW-XOWuzY0WUe-2">
+        <mxCell id="24NoGxlCW-XOWuzY0WUe-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="iO1HhjMRqrYUtXoviHuo-2" target="24NoGxlCW-XOWuzY0WUe-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="330" y="460" as="targetPoint" />
             <Array as="points">
@@ -22,127 +22,127 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="24NoGxlCW-XOWuzY0WUe-4" value="getReader" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="24NoGxlCW-XOWuzY0WUe-3">
+        <mxCell id="24NoGxlCW-XOWuzY0WUe-4" value="getReader" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="24NoGxlCW-XOWuzY0WUe-3" vertex="1" connectable="0">
           <mxGeometry x="0.208" y="5" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="iO1HhjMRqrYUtXoviHuo-2" value="CelebornShuffleManager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="iO1HhjMRqrYUtXoviHuo-2" value="CelebornShuffleManager" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="60" y="50" width="170" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ag-5AsOvkKHU-9Suy-c1-4">
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ag-5AsOvkKHU-9Suy-c1-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="740" y="70" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-17" value="internalWrite" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Bv6SpbKrFaZBJMjKbw5c-9">
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-17" value="internalWrite" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Bv6SpbKrFaZBJMjKbw5c-9" vertex="1" connectable="0">
           <mxGeometry x="-0.196" y="-4" relative="1" as="geometry">
             <mxPoint x="1" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ag-5AsOvkKHU-9Suy-c1-4" value="CelebornHashBasedColumnarShuffleWriter（ShuffleClient）" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="ag-5AsOvkKHU-9Suy-c1-4" value="CelebornHashBasedColumnarShuffleWriter（ShuffleClient）" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="357.5" y="40" width="265" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Bv6SpbKrFaZBJMjKbw5c-18" target="Q_T0xvldnaPgb1Z-qR_q-3">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Bv6SpbKrFaZBJMjKbw5c-18" target="Q_T0xvldnaPgb1Z-qR_q-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-5" value="C" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q_T0xvldnaPgb1Z-qR_q-4">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-5" value="C" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Q_T0xvldnaPgb1Z-qR_q-4" vertex="1" connectable="0">
           <mxGeometry x="-0.3488" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-18" value="jniWrapper.makeForRSS（celebornPartitionPusher&amp;nbsp;）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-18" value="jniWrapper.makeForRSS（celebornPartitionPusher&amp;nbsp;）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="760" y="80" width="290" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-19" value="&lt;div&gt;celebornPartitionPusher = new CelebornPartitionPusher(....&lt;span style=&quot;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" vertex="1" parent="1">
+        <mxCell id="Bv6SpbKrFaZBJMjKbw5c-19" value="&lt;div&gt;celebornPartitionPusher = new CelebornPartitionPusher(....&lt;span style=&quot;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;" parent="1" vertex="1">
           <mxGeometry x="750" y="36" width="340" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.57;exitY=-0.023;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-3" target="Bv6SpbKrFaZBJMjKbw5c-19">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.003;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.57;exitY=-0.023;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-3" target="Bv6SpbKrFaZBJMjKbw5c-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-7" value="反射回调" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q_T0xvldnaPgb1Z-qR_q-6">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-7" value="反射回调" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Q_T0xvldnaPgb1Z-qR_q-6" vertex="1" connectable="0">
           <mxGeometry x="-0.4667" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-3" value="细节未知" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-3" value="细节未知" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1120" y="68" width="100" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-8" target="Q_T0xvldnaPgb1Z-qR_q-9">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-8" target="Q_T0xvldnaPgb1Z-qR_q-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-11" value="pushPartitionData" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Q_T0xvldnaPgb1Z-qR_q-10">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-11" value="pushPartitionData" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Q_T0xvldnaPgb1Z-qR_q-10" vertex="1" connectable="0">
           <mxGeometry x="-0.3693" y="2" relative="1" as="geometry">
             <mxPoint x="22" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-8" value="CelebornPartitionPusher&lt;br&gt;&amp;nbsp; &amp;nbsp;pushPartitionData(partitionId: Int, buffer: Array[Byte])" style="whiteSpace=wrap;html=1;rounded=1;align=left;" vertex="1" parent="1">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-8" value="CelebornPartitionPusher&lt;br&gt;&amp;nbsp; &amp;nbsp;pushPartitionData(partitionId: Int, buffer: Array[Byte])" style="whiteSpace=wrap;html=1;rounded=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="357.5" y="130" width="302.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-9" value="client.pushData/mergeData&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 12px; font-family: Helvetica;&quot;&gt;client.pushOrMergeData&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" vertex="1" parent="1">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-9" value="client.pushData/mergeData&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; font-size: 12px; font-family: Helvetica;&quot;&gt;client.pushOrMergeData&lt;/span&gt;" style="whiteSpace=wrap;html=1;align=left;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="790" y="130" width="180" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="4ELQZ7cQL_2lh3KPE_tf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-12" target="Q_T0xvldnaPgb1Z-qR_q-13">
+        <mxCell id="4ELQZ7cQL_2lh3KPE_tf-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Q_T0xvldnaPgb1Z-qR_q-12" target="Q_T0xvldnaPgb1Z-qR_q-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="4ELQZ7cQL_2lh3KPE_tf-6" value="pushOrMergeData" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4ELQZ7cQL_2lh3KPE_tf-1">
+        <mxCell id="4ELQZ7cQL_2lh3KPE_tf-6" value="pushOrMergeData" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4ELQZ7cQL_2lh3KPE_tf-1" vertex="1" connectable="0">
           <mxGeometry x="-0.3818" relative="1" as="geometry">
             <mxPoint x="20" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-12" value="ShuffleClientImpl" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-12" value="ShuffleClientImpl" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="357.5" y="240" width="182.5" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-13" value="compressor：LZ4/ZSTD&lt;br&gt;compressor.compress(data, offset, length);&lt;br&gt;压缩数据放入&amp;nbsp;byte[] body&lt;br&gt;body 前用 16 位来存4个&amp;nbsp;int&amp;nbsp;&amp;nbsp;mapId,attemptId,nextBatchId,compressedTotalSize&lt;br&gt;包装成&amp;nbsp;PushData pushData = new PushData(MASTER_MODE, shuffleKey, loc.getUniqueId(), buffer);&lt;br&gt;TransportClient.pushData(pushData)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Q_T0xvldnaPgb1Z-qR_q-13" value="compressor：LZ4/ZSTD&lt;br&gt;compressor.compress(data, offset, length);&lt;br&gt;压缩数据放入&amp;nbsp;byte[] body&lt;br&gt;body 前用 16 位来存4个&amp;nbsp;int&amp;nbsp;&amp;nbsp;mapId,attemptId,nextBatchId,compressedTotalSize&lt;br&gt;包装成&amp;nbsp;PushData pushData = new PushData(MASTER_MODE, shuffleKey, loc.getUniqueId(), buffer);&lt;br&gt;TransportClient.pushData(pushData)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="700" y="215" width="550" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="24NoGxlCW-XOWuzY0WUe-2">
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="24NoGxlCW-XOWuzY0WUe-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="630" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-11" value="获取序列化器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8zj__Zkj_Gjuy6MGKbzn-9">
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-11" value="获取序列化器" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8zj__Zkj_Gjuy6MGKbzn-9" vertex="1" connectable="0">
           <mxGeometry x="-0.283" y="2" relative="1" as="geometry">
             <mxPoint x="36" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="24NoGxlCW-XOWuzY0WUe-2" target="8zj__Zkj_Gjuy6MGKbzn-16">
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="24NoGxlCW-XOWuzY0WUe-2" target="8zj__Zkj_Gjuy6MGKbzn-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="g0M5Z7LU6KuPDxk4xlls-2" value="循环每一个partition&lt;br style=&quot;border-color: var(--border-color); font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; background-color: rgb(251, 251, 251);&quot;&gt;val inputStream = rssShuffleClient.readPartition&lt;br&gt;出来的流应该是去掉了前 16 位&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; background-color: rgb(251, 251, 251);&quot;&gt;serializerInstance.deserializeStream(inputStream&amp;nbsp;)&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8zj__Zkj_Gjuy6MGKbzn-19">
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-2" value="循环每一个partition&lt;br style=&quot;border-color: var(--border-color); font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; background-color: rgb(251, 251, 251);&quot;&gt;val inputStream = rssShuffleClient.readPartition&lt;br&gt;出来的流应该是去掉了前 16 位&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); font-size: 12px; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; background-color: rgb(251, 251, 251);&quot;&gt;serializerInstance.deserializeStream(inputStream&amp;nbsp;)&lt;/span&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="8zj__Zkj_Gjuy6MGKbzn-19" vertex="1" connectable="0">
           <mxGeometry x="0.4302" y="5" relative="1" as="geometry">
             <mxPoint x="-130" y="-27" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="24NoGxlCW-XOWuzY0WUe-2" value="RssShuffleReader#read" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+        <mxCell id="24NoGxlCW-XOWuzY0WUe-2" value="RssShuffleReader#read" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="361" y="360" width="129" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gj6j2B2aXCY3r2UFVUmw-3" target="8zj__Zkj_Gjuy6MGKbzn-12">
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="gj6j2B2aXCY3r2UFVUmw-3" target="8zj__Zkj_Gjuy6MGKbzn-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="gj6j2B2aXCY3r2UFVUmw-3" value="//默认从 ShuffleDependency 中获取&lt;br&gt;serializerInstance = dep.serializer.newInstance()&lt;br&gt;&lt;br&gt;// 如果 celeborn 开启了&amp;nbsp;olumnarShuffle 并且所有字段都支持列存&lt;br&gt;//就用&amp;nbsp;RssColumnarBatchSerializer&lt;br&gt;if&amp;nbsp;columnarShuffleEnabled &amp;amp;&amp;amp;&amp;nbsp;supportsColumnarType(schema)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;serializerInstance = new RssColumnarBatchSerializer" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="gj6j2B2aXCY3r2UFVUmw-3" value="//默认从 ShuffleDependency 中获取&lt;br&gt;serializerInstance = dep.serializer.newInstance()&lt;br&gt;&lt;br&gt;// 如果 celeborn 开启了&amp;nbsp;olumnarShuffle 并且所有字段都支持列存&lt;br&gt;//就用&amp;nbsp;RssColumnarBatchSerializer&lt;br&gt;if&amp;nbsp;columnarShuffleEnabled &amp;amp;&amp;amp;&amp;nbsp;supportsColumnarType(schema)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;serializerInstance = new RssColumnarBatchSerializer" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="630" y="335" width="370" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-12" value="gluten 在构建&amp;nbsp;ShuffleDependency&amp;nbsp; 时指定了&lt;br&gt;org.apache.spark.sql.execution.ColumnarShuffleExchangeExec#serializer&lt;br&gt;&amp;nbsp; &amp;nbsp;if&amp;nbsp;isUseCelebornShuffleManager&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;org.apache.spark.shuffle.CelebornColumnarBatchSerializer&amp;nbsp;然而并没有实现序列化方法&lt;br&gt;&amp;nbsp; &amp;nbsp;else&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;else GlutenColumnarBatchSerializer" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-12" value="gluten 在构建&amp;nbsp;ShuffleDependency&amp;nbsp; 时指定了&lt;br&gt;org.apache.spark.sql.execution.ColumnarShuffleExchangeExec#serializer&lt;br&gt;&amp;nbsp; &amp;nbsp;if&amp;nbsp;isUseCelebornShuffleManager&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;org.apache.spark.shuffle.CelebornColumnarBatchSerializer&amp;nbsp;然而并没有实现序列化方法&lt;br&gt;&amp;nbsp; &amp;nbsp;else&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;else GlutenColumnarBatchSerializer" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1080" y="340" width="510" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-14" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" vertex="1" parent="1">
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-14" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" parent="1" vertex="1">
           <mxGeometry x="937.5" y="242.5" width="85" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-15" value="serializerInstance&amp;nbsp; 应该是&amp;nbsp;CelebornColumnarBatchSerializer&amp;nbsp; 或者&amp;nbsp;RssColumnarBatchSerializer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-15" value="serializerInstance&amp;nbsp; 应该是&amp;nbsp;CelebornColumnarBatchSerializer&amp;nbsp; 或者&amp;nbsp;RssColumnarBatchSerializer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="710" y="535" width="530" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="g0M5Z7LU6KuPDxk4xlls-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8zj__Zkj_Gjuy6MGKbzn-16">
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8zj__Zkj_Gjuy6MGKbzn-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="830" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="g0M5Z7LU6KuPDxk4xlls-5" value="RssColumnarBatchSerializer#nextBatch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="g0M5Z7LU6KuPDxk4xlls-4">
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-5" value="RssColumnarBatchSerializer#nextBatch" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="g0M5Z7LU6KuPDxk4xlls-4" vertex="1" connectable="0">
           <mxGeometry x="-0.2" y="2" relative="1" as="geometry">
             <mxPoint x="17" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="g0M5Z7LU6KuPDxk4xlls-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8zj__Zkj_Gjuy6MGKbzn-16">
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8zj__Zkj_Gjuy6MGKbzn-16" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="600" y="870" as="targetPoint" />
             <Array as="points">
@@ -151,21 +151,21 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-16" value="deserializeStream" style="whiteSpace=wrap;html=1;rounded=1;align=center;" vertex="1" parent="1">
+        <mxCell id="8zj__Zkj_Gjuy6MGKbzn-16" value="deserializeStream" style="whiteSpace=wrap;html=1;rounded=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="333" y="600" width="185" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="g0M5Z7LU6KuPDxk4xlls-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="g0M5Z7LU6KuPDxk4xlls-6">
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="g0M5Z7LU6KuPDxk4xlls-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1330" y="630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="g0M5Z7LU6KuPDxk4xlls-6" value="1、readInt 获取&amp;nbsp;numRows&lt;br&gt;2、循环schema 列&lt;br&gt;3、 获取列的长度&lt;br&gt;4、读取 bytes&lt;br&gt;5、RssColumnAccessor.decompress(bytes)&amp;nbsp;&lt;br&gt;6、为每列构建一个&amp;nbsp;org.apache.spark.sql.vectorized.ColumnarBatch&lt;br&gt;7、columnarBatch.rowIterator() 返回&amp;nbsp; &amp;nbsp;Iterator[InternalRow] 这里没看懂" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-6" value="1、readInt 获取&amp;nbsp;numRows&lt;br&gt;2、循环schema 列&lt;br&gt;3、 获取列的长度&lt;br&gt;4、读取 bytes&lt;br&gt;5、RssColumnAccessor.decompress(bytes)&amp;nbsp;&lt;br&gt;6、为每列构建一个&amp;nbsp;org.apache.spark.sql.vectorized.ColumnarBatch&lt;br&gt;7、columnarBatch.rowIterator() 返回&amp;nbsp; &amp;nbsp;Iterator[InternalRow] 这里没看懂" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="840" y="580" width="410" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="g0M5Z7LU6KuPDxk4xlls-9" value="压缩算法是根据字段类型来的，不是之前的 LZ4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-9" value="压缩算法是根据字段类型来的，不是之前的 LZ4" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1330" y="615" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="g0M5Z7LU6KuPDxk4xlls-12" value="jniByteInputStream = JniByteInputStreams.create(in)&lt;br&gt;c ++ shuffleReaderHandle&lt;br&gt;nextValue&amp;nbsp;ShuffleReaderJniWrapper.INSTANCE.next(shuffleReaderHandle)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="g0M5Z7LU6KuPDxk4xlls-12" value="jniByteInputStream = JniByteInputStreams.create(in)&lt;br&gt;c ++ shuffleReaderHandle&lt;br&gt;nextValue&amp;nbsp;ShuffleReaderJniWrapper.INSTANCE.next(shuffleReaderHandle)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="620" y="835" width="430" height="60" as="geometry" />
         </mxCell>
       </root>
