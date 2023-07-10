@@ -1,9 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2023-07-10T02:21:11.318Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" version="21.6.1" etag="tEgoBlwBesJsmY43QYp-" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-10T03:31:21.971Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36" etag="YYy4FDojX2ZuiwRhKvpK" version="21.6.1" type="github">
   <diagram name="Page-1" id="Pslp9yiOO5NDbKFN2giS">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="AhSz4RooyQjYuflEd49M-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AhSz4RooyQjYuflEd49M-10" target="AhSz4RooyQjYuflEd49M-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-10" value="FederalConnection" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="200" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-11" value="构建 runner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="730" y="200" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AhSz4RooyQjYuflEd49M-19" target="AhSz4RooyQjYuflEd49M-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-22" value="openConnection" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="AhSz4RooyQjYuflEd49M-20">
+          <mxGeometry x="-0.4485" y="-3" relative="1" as="geometry">
+            <mxPoint x="23" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-19" value="dirver" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="AhSz4RooyQjYuflEd49M-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-23" value="Map&amp;lt;String, String&amp;gt; info" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="196" y="110" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AhSz4RooyQjYuflEd49M-26" target="AhSz4RooyQjYuflEd49M-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="AhSz4RooyQjYuflEd49M-26" value="ConnectionContext" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="205" width="115" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
