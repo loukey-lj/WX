@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-19T09:42:14.592Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="2sLfXP6gx7c4SJ0LFAQC" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-19T10:05:49.460Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="2i6-sh3qQXrgX0ikHiHx" version="23.1.6" type="github">
   <diagram name="Page-1" id="8pTvr2u8eSxearsXrvaI">
     <mxGraphModel dx="1207" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -76,7 +76,7 @@
         <mxCell id="wo7xG17hLIhDxEqsaRnj-26" value="sql 调优" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="440" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="wo7xG17hLIhDxEqsaRnj-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wo7xG17hLIhDxEqsaRnj-29" target="wo7xG17hLIhDxEqsaRnj-31">
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wo7xG17hLIhDxEqsaRnj-29" target="wo7xG17hLIhDxEqsaRnj-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wo7xG17hLIhDxEqsaRnj-29" value="graph" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -89,19 +89,28 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wo7xG17hLIhDxEqsaRnj-31" value="&lt;div style=&quot;background-color:#2b2b2b;color:#a9b7c6&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;StreamNode&lt;/pre&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="290" y="810" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wo7xG17hLIhDxEqsaRnj-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wo7xG17hLIhDxEqsaRnj-33" target="wo7xG17hLIhDxEqsaRnj-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wo7xG17hLIhDxEqsaRnj-33" value="&lt;div style=&quot;background-color:#2b2b2b;color:#a9b7c6&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;edges&lt;/pre&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="430" y="680" width="120" height="60" as="geometry" />
+          <mxGeometry x="490" y="810" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wo7xG17hLIhDxEqsaRnj-35" value="改并行度" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="820" width="120" height="60" as="geometry" />
+          <mxGeometry x="290" y="950" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wo7xG17hLIhDxEqsaRnj-37" value="改 shuffle" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="430" y="820" width="120" height="60" as="geometry" />
+          <mxGeometry x="490" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wo7xG17hLIhDxEqsaRnj-40" target="wo7xG17hLIhDxEqsaRnj-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-40" value="固定 UUID 算法&lt;br&gt;chain/前向节点的hash值有关" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="30" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-43" value="对增加&amp;nbsp; elt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="965" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
