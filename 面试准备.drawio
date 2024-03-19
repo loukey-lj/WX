@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-19T14:30:57.297Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="2G0rR3VNFbWZO4X_cpt5" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-19T14:57:36.042Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="A3SDkw34iDwPGArQnDHA" version="23.1.6" type="github">
   <diagram name="Page-1" id="8pTvr2u8eSxearsXrvaI">
     <mxGraphModel dx="1140" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -165,6 +165,21 @@
         </mxCell>
         <mxCell id="wo7xG17hLIhDxEqsaRnj-64" value="return new FederalJdbcConnection(driver, factory, url, info);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="360" y="1680" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-66" value="protected final Meta meta&lt;br&gt;&lt;div&gt;AvaticaSpecificDatabaseMetaData metaData;&lt;/div&gt;&lt;div&gt;Map&amp;lt;Integer, AvaticaStatement&amp;gt; statementMap = new ConcurrentHashMap&amp;lt;&amp;gt;();&lt;/div&gt;&lt;div&gt;WatchDog watchDog&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1630" width="450" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-68" value="FederalMeta extends MetaImpl implements Meta" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="1560" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-70" value="FederalRemoteSvc extends JsonService extaneds AbstractService implements Service" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1505" y="1560" width="490" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-71" value="RemoteMeta extends MetaImpl implements Meta" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="1724" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-73" value="AvaticaHttpClient client" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1525" y="1588" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
