@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-19T10:05:49.460Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="2i6-sh3qQXrgX0ikHiHx" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-19T14:30:57.297Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="2G0rR3VNFbWZO4X_cpt5" version="23.1.6" type="github">
   <diagram name="Page-1" id="8pTvr2u8eSxearsXrvaI">
-    <mxGraphModel dx="1207" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1140" dy="728" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -111,6 +111,60 @@
         </mxCell>
         <mxCell id="wo7xG17hLIhDxEqsaRnj-43" value="对增加&amp;nbsp; elt" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="80" y="965" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-45" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="35" y="1110" width="265" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-46" value="client" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1081" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-47" value="class.forName(dirverClazz)&lt;br&gt;Connection con = DriverManager.getConnection()&lt;br&gt;&lt;br&gt;&lt;div&gt;statement = connection.createStatement();&lt;/div&gt;&lt;div&gt;statement.execute(sql);&lt;/div&gt;&lt;div&gt;resultSet = statement.getResultSet();&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="57.5" y="1140" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-48" value="JDBC driver" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-49" value="server1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-50" value="server2" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-53" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="wo7xG17hLIhDxEqsaRnj-48" target="wo7xG17hLIhDxEqsaRnj-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="1240" as="sourcePoint" />
+            <mxPoint x="450" y="1190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-54" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" target="wo7xG17hLIhDxEqsaRnj-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="1480" as="sourcePoint" />
+            <mxPoint x="410" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-55" value="获取连接地址" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="294" y="1430" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-57" value="FederalDriver extends Driver" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1560" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-58" value="FederalJdbc41Factory implements AvaticaFactory" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="277.5" y="1560" width="312.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-59" value="FederalJdbcConnection extends AvaticaConnection&amp;nbsp;implements Connection" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1560" width="312.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-61" value="public Connection connect(String url, Properties info)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1650" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-62" value="return connection = factory.newConnection" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="45" y="1680" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-63" value="public AvaticaConnection newConnection" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1650" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wo7xG17hLIhDxEqsaRnj-64" value="return new FederalJdbcConnection(driver, factory, url, info);" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1680" width="340" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
