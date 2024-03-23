@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-23T11:48:29.090Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="9VF8rUxJOSILrfq6b1Lf" version="24.0.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-23T11:51:54.433Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="jl6RQMELnLmkwg8FSBoV" version="24.0.7" type="github" pages="2">
   <diagram name="Page-1" id="8pTvr2u8eSxearsXrvaI">
     <mxGraphModel dx="1362" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -455,7 +455,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="iLSKh2HVKpCb_uNWLqnO-76" value="9. 提供 slot" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-74">
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-76" value="10. 提供 slot" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-74">
           <mxGeometry x="0.024" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -463,13 +463,29 @@
         <mxCell id="iLSKh2HVKpCb_uNWLqnO-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.43;entryY=0.062;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-37" target="iLSKh2HVKpCb_uNWLqnO-78">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="iLSKh2HVKpCb_uNWLqnO-79" value="提交 task" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-77">
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-79" value="11. 提交 task" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-77">
           <mxGeometry x="-0.0663" y="1" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="iLSKh2HVKpCb_uNWLqnO-78" value="task" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
           <mxGeometry x="823.5" y="1863" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0VgsZ7ddNoihXcxI8Bk-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="691.5" y="1700" as="sourcePoint" />
+            <mxPoint x="689" y="1837.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="692" y="1701" />
+              <mxPoint x="690" y="1701" />
+              <mxPoint x="690" y="1769" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="E0VgsZ7ddNoihXcxI8Bk-2" value="9. 分配 slot" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E0VgsZ7ddNoihXcxI8Bk-1">
+          <mxGeometry x="-0.0071" y="1" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
