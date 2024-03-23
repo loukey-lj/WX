@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-22T00:07:08.280Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="EFm4RzH1gQqCAPOSA4kQ" version="24.0.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-03-23T11:46:17.890Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="al5V4ADF1xiYOutlkLFT" version="24.0.7" type="github" pages="2">
   <diagram name="Page-1" id="8pTvr2u8eSxearsXrvaI">
     <mxGraphModel dx="1362" dy="759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -210,29 +210,266 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="7JwdACaMwQVdJiAhYtiJ-8" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-26" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="554" y="1483.5" width="350" height="256.5" as="geometry" />
+        </mxCell>
+        <mxCell id="7JwdACaMwQVdJiAhYtiJ-8" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="80" y="120" width="710" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="7JwdACaMwQVdJiAhYtiJ-6" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="7JwdACaMwQVdJiAhYtiJ-8">
+        <mxCell id="7JwdACaMwQVdJiAhYtiJ-6" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="7JwdACaMwQVdJiAhYtiJ-8" vertex="1">
           <mxGeometry width="700" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="7JwdACaMwQVdJiAhYtiJ-4" value="org.apache.flink.client.cli.CliFrontend#main&lt;div&gt;&amp;nbsp; - 加载配置&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 解析 commond&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 构建 CliFrontend&amp;nbsp; 执行 parseAndRun 方法 根据指令执行 run 方法&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 选择启动方式&amp;nbsp;CustomCommandLine（GenericCLI/FlinkYarnSessionCli/DefaultCli）&lt;/div&gt;&lt;div&gt;&amp;nbsp; -&amp;nbsp;getJobJarAndDependencies&lt;/div&gt;&lt;div&gt;&amp;nbsp; -&amp;nbsp;getEffectiveConfiguration&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 把配置 依赖包装成一个&amp;nbsp;PackagedProgram&amp;nbsp; 然后&amp;nbsp; ClientUtils.executeProgram(executorServiceLoader，conf，program...)&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 初始化 flink&amp;nbsp;Environment&amp;nbsp; 应该是放在了 ThreadLocal 的变量中 方便在 用户代码的 main 方法或通过 api 去获取 env&lt;/div&gt;&lt;div&gt;&amp;nbsp; -&amp;nbsp; 反射调用 用户的 main 函数&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="7JwdACaMwQVdJiAhYtiJ-8">
+        <mxCell id="7JwdACaMwQVdJiAhYtiJ-4" value="org.apache.flink.client.cli.CliFrontend#main&lt;div&gt;&amp;nbsp; - 加载配置&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 解析 commond&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 构建 CliFrontend&amp;nbsp; 执行 parseAndRun 方法 根据指令执行 run 方法&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 选择启动方式&amp;nbsp;CustomCommandLine（GenericCLI/FlinkYarnSessionCli/DefaultCli）&lt;/div&gt;&lt;div&gt;&amp;nbsp; -&amp;nbsp;getJobJarAndDependencies&lt;/div&gt;&lt;div&gt;&amp;nbsp; -&amp;nbsp;getEffectiveConfiguration&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 把配置 依赖包装成一个&amp;nbsp;PackagedProgram&amp;nbsp; 然后&amp;nbsp; ClientUtils.executeProgram(executorServiceLoader，conf，program...)&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 初始化 flink&amp;nbsp;Environment&amp;nbsp; 应该是放在了 ThreadLocal 的变量中 方便在 用户代码的 main 方法或通过 api 去获取 env&lt;/div&gt;&lt;div&gt;&amp;nbsp; -&amp;nbsp; 反射调用 用户的 main 函数&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=1;points=[];autosize=1;strokeColor=none;fillColor=none;movable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="7JwdACaMwQVdJiAhYtiJ-8" vertex="1">
           <mxGeometry x="30" y="40" width="680" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="7JwdACaMwQVdJiAhYtiJ-7" value="CliFronted" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="7JwdACaMwQVdJiAhYtiJ-8">
+        <mxCell id="7JwdACaMwQVdJiAhYtiJ-7" value="CliFronted" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" parent="7JwdACaMwQVdJiAhYtiJ-8" vertex="1">
           <mxGeometry x="20" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="7JwdACaMwQVdJiAhYtiJ-9" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="7JwdACaMwQVdJiAhYtiJ-9" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="20" y="50" width="211" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="7JwdACaMwQVdJiAhYtiJ-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="7JwdACaMwQVdJiAhYtiJ-9">
+        <mxCell id="7JwdACaMwQVdJiAhYtiJ-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="7JwdACaMwQVdJiAhYtiJ-9" vertex="1">
           <mxGeometry width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="7JwdACaMwQVdJiAhYtiJ-2" value="flink run -m yarn-clusert ..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="7JwdACaMwQVdJiAhYtiJ-9">
+        <mxCell id="7JwdACaMwQVdJiAhYtiJ-2" value="flink run -m yarn-clusert ..." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="7JwdACaMwQVdJiAhYtiJ-9" vertex="1">
           <mxGeometry x="21" y="5" width="190" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="7JwdACaMwQVdJiAhYtiJ-11" value="用户 jar&lt;div&gt;&amp;nbsp; - main&amp;nbsp; StreamExecutionEnvironment#execute(java.lang.String)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; 生成&amp;nbsp;StreamGraph streamGraph&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - AbstractJobClusterExecutor#execute(streamGraph)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 把 streamGraph 转成&amp;nbsp;JobGraph jobGraph&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 生成&amp;nbsp;ClusterDescriptor 执行&amp;nbsp;deployJobCluster 对于 yarn 来说会初始化 一个 yarnClient&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 检测 yarn queue / 资源 等&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 启动&amp;nbsp;startAppMaster&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="60" y="340" width="500" height="160" as="geometry" />
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-2" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="80" y="370" width="580" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-1" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="iLSKh2HVKpCb_uNWLqnO-2">
+          <mxGeometry width="580" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="7JwdACaMwQVdJiAhYtiJ-11" value="用户 jar&lt;div&gt;&amp;nbsp; - main&amp;nbsp; StreamExecutionEnvironment#execute(java.lang.String)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; -&amp;nbsp; 生成&amp;nbsp;StreamGraph streamGraph&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - AbstractJobClusterExecutor#execute(streamGraph)&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 把 streamGraph 转成&amp;nbsp;JobGraph jobGraph&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 生成&amp;nbsp;ClusterDescriptor 执行&amp;nbsp;deployJobCluster 对于 yarn 来说会初始化 一个 yarnClient&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 检测 yarn queue / 资源 等&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 启动&amp;nbsp;startAppMaster&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - 初始化文件系统&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; - 上传文件&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;&amp;nbsp;yarnClient.submitApplication()&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp; 执行&amp;nbsp;org.apache.flink.yarn.entrypoint.YarnJobClusterEntrypoint#main 方法&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="iLSKh2HVKpCb_uNWLqnO-2" vertex="1">
+          <mxGeometry x="30" width="500" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-3" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="620" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-4" value="yarn-nodemanager" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="608" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-5" value="YarnJobClusterEntypoint#main" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="651" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-6" value="- (new YarnJobClusterEntrypoint(conf)).startCluster()&lt;div&gt;&amp;nbsp; -&amp;nbsp;initializeServices&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;- 创建 Akka 服务&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;- 创建高可用服务&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;-&amp;nbsp;blobServer/heartbeatServices/&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 创建 dispatcher 和启动 负责 接受用户的作业/启动 JobMaster&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 启动 dispather 调用 onStart 方法&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp; - 启动 dispather 后对 jobGraph 执行 runJob 方法 创建&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;createJobManagerRunner&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 启动 startJobMasterServices /&amp;nbsp;resetAndStartScheduler&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 启动 和&amp;nbsp; TM/RM 的心跳服务&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - 启动 slotpool&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; - slotPool 连接 resourceManager 请求资源 ，slotManager 向 yarn 申请资源 启动 TM&lt;/div&gt;&lt;div&gt;&amp;nbsp; - 创建启动 resourMamager&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - 创建 启动 yarn 的&amp;nbsp; resourceManagerClient/nodeManagerClient&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - 启动和 JM/TM 的心跳服务&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - 启动&amp;nbsp;slotManager&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="735" width="490" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-7" value="YarnTaskExecutorRunner" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1048" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-8" value="TaskExecuor on start&lt;div&gt;&amp;nbsp;- 启动之后向 RM 注册&lt;/div&gt;&lt;div&gt;&amp;nbsp;- RM 给 TM 分配 slot&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;- 向 JM 提供 slot&amp;nbsp; (让JM 下发 task)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1095" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-9" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1490" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-10" target="iLSKh2HVKpCb_uNWLqnO-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-16" value="1.1 脚本启动执行" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-15">
+          <mxGeometry x="-0.3796" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-10" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1510" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-11" value="脚本入口" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-12" value="bin/flink run -t yarn-per-job -c&amp;nbsp; *.jar" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1540" width="200" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-13" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1620" width="240" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-14" value="CliFronted" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-17" value="1.2 解析参数&lt;div&gt;1.3 使用 FlinkYarnSessionCli&lt;/div&gt;&lt;div&gt;1.4 执行用户代码&lt;/div&gt;&lt;div&gt;1.5 env.execut() 生成 StreamGraph&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1660" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-18" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1740" width="210" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-19" value="YarnJobClusterExector" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1740" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-20" value="1.6 生成 JobGraph" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1770" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-21" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1790" width="190" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-22" value="YarnClusterDescriptor" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="1785" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-23" target="iLSKh2HVKpCb_uNWLqnO-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-23" value="1.7 上传 jar 配置&lt;div&gt;1.8 封装提交参数和命令&lt;/div&gt;&lt;div&gt;1.9 通过 YarnClient 向 yarn resourceManager 启动 AM&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1820" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-24" target="iLSKh2HVKpCb_uNWLqnO-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="1550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-32" value="2 启动 AM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-30">
+          <mxGeometry x="-0.4531" y="2" relative="1" as="geometry">
+            <mxPoint x="17" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-24" value="yarn&lt;br&gt;ResourceManager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="1520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-27" value="yarn&lt;br&gt;NodeManager" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1490" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-28" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="567" y="1530" width="336" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-29" value="AM" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.005;entryY=0.082;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-33" target="iLSKh2HVKpCb_uNWLqnO-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-51" value="3.3 启动" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-39">
+          <mxGeometry x="0.02" relative="1" as="geometry">
+            <mxPoint x="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-33" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1550" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-34" value="31. 启动Dispatcher" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1545" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-35" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1645" width="150" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-36" value="3.2 启动ResourceManager" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="567" y="1649" width="160" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-37" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="799" y="1555" width="101" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-38" value="JobMaster" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="804" y="1557" width="60" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-42" value="对 jobGraph 进行执行启动 JobMaster" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1575" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-44" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="809" y="1580" width="81" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-53" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-45" target="iLSKh2HVKpCb_uNWLqnO-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-54" value="4.注册请求slot" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-53">
+          <mxGeometry x="-0.1712" y="-1" relative="1" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-45" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1670" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-46" value="启动slotManager" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1664" width="100" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-47" value="启动slotpool" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="809" y="1580" width="91" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-52" value="3.4 JobGraph 生成 ExecuttionGraph" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="793" y="1620" width="111" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-55" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.535;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-45" target="iLSKh2HVKpCb_uNWLqnO-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-56" value="5. 申请资源启动 TM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-55">
+          <mxGeometry x="0.3511" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-57" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="382.5" y="1750" width="545" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-58" value="yarn NodeManager" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1755" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-59" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="408" y="1795" width="520" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-60" value="YanTaskExecutorRunner (TM)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="388" y="1790" width="207" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-61" value="YarnJobClusterEntypoint(JM)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="602" y="1520" width="207" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-24" target="iLSKh2HVKpCb_uNWLqnO-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-64" value="6. 启动 TM" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-63">
+          <mxGeometry x="-0.0969" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-65" value="7. 启动 TaskExecutor" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="415" y="1815" width="505" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-66" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="447" y="1840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-67" target="iLSKh2HVKpCb_uNWLqnO-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-73" value="8. 注册 slot" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-72">
+          <mxGeometry x="-0.0407" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-67" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="585.5" y="1840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-68" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1840" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-69" value="slot" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1838" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-70" value="slot" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="615" y="1837.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-71" value="slot" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1838" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.89;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-68" target="iLSKh2HVKpCb_uNWLqnO-47">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="1870" />
+              <mxPoint x="940" y="1590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-76" value="9. 提供 slot" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-74">
+          <mxGeometry x="0.024" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.43;entryY=0.062;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iLSKh2HVKpCb_uNWLqnO-37" target="iLSKh2HVKpCb_uNWLqnO-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-79" value="提交 task" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="iLSKh2HVKpCb_uNWLqnO-77">
+          <mxGeometry x="-0.0663" y="1" relative="1" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iLSKh2HVKpCb_uNWLqnO-78" value="task" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="823.5" y="1863" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
