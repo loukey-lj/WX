@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-26T14:07:46.114Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="ziYZLkh7UI2hvm3xMqXL" version="23.1.6" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2024-03-26T14:09:37.378Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="b4ie-lfnJ75NAWDEelZA" version="23.1.6" type="github" pages="3">
   <diagram name="Page-1" id="8pTvr2u8eSxearsXrvaI">
     <mxGraphModel dx="1026" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -534,8 +534,8 @@
         <mxCell id="GAfJ6d91l3tAcKYbr8MG-14" value="将查询结果 路径 关系表达式&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="95" y="-1612" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="GAfJ6d91l3tAcKYbr8MG-15" value="新的sql&amp;nbsp; &amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="105" y="-1552" width="70" height="30" as="geometry" />
+        <mxCell id="GAfJ6d91l3tAcKYbr8MG-15" value="新的sql&amp;nbsp; &amp;nbsp;替换 成tableScan&amp;nbsp; codge&amp;nbsp; spark.read(parquet)&lt;br&gt;&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="-1557" width="320" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
